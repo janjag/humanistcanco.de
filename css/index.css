@@ -189,7 +189,13 @@ h3 {
 .clear {
     clear: both;
     border-bottom: 0.15em solid #C3C1CB;
-    margin: 1em 0 2em 0;
+    margin: 1.2em 0 2em 0;
+}
+
+.blank {
+    width: 1em;
+    margin: 0;
+    border: none;
 }
 
 /* Home section */
@@ -234,25 +240,19 @@ h3 {
 
 /* About me section */
 
-.about,
+.col,
 #about ul {
-    width: 68%;
     font-size: 1.2em;
-    padding-bottom: 1em;
-}
-
-.about {
-    height: 23em;
-    line-height: 1.5em;
-    text-align: justify;
-    vertical-align: baseline;
 }
 
 .col {
-    display: inline-block;
+    display: block;
     float: left;
-    width: 50%;
+    width: 34%;
     padding-right: 2em;
+    line-height: 1.5em;
+    text-align: justify;
+    vertical-align: bottom;
 }
 
 .col p {
@@ -265,20 +265,21 @@ h3 {
 }
 
 #about ul {
-    height: 6.8em;
+    width: 68%;
 }
 
 #about ul li {
     display: block;
     float: left;
-    padding-left: 0.6em;
+    padding: 0 0.6em 1em 0;
     margin: 0.6em 0 0 0;
     width: 30%;
 }
 
+.col p i,
 #about ul li i {
-    display: inline-block;
-    font-size: 0.8em;
+    width: 1em;
+    text-align: center;
     margin-right: 0.5em;
 }
 

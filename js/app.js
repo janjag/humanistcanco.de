@@ -1,4 +1,4 @@
-"use strict"
+'use strict'
 
 var sections = $('section')
   , nav = $('#nav')
@@ -16,6 +16,12 @@ $(window).on('scroll', function () {
       
       $(this).addClass('active');
       nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+        if(nav.find('a[href="#home"]').hasClass('active')) {
+            $('#left_col').find('q').hide(700, 'swing');
+        }
+        else {
+            $('#left_col').find('q').show(700, 'swing');
+        }
     }
   });
 });

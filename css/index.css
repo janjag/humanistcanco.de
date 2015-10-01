@@ -8,6 +8,18 @@ body, h1, h2, h3, h4, ul, li, p, section, article, img, q {
     padding: 0;
 }
 
+html {
+    height: 100%;
+    font-size: 100%; /* ~16px */
+    font-family: 'latolight', sans-serif;
+    color: #294F6D;
+}
+
+body {
+    position: relative;
+    height: 100%;
+}
+
 ul {
     list-style: none;
 }
@@ -16,23 +28,10 @@ a, q, article, section {
     display: inline-block;
     text-decoration: none;
 }
-a:hover,
+
+a, a:hover,
 a:visited {
     color: inherit;
-}
-
-html {
-    background: url(../static/img/bacground1080p.jpg) center center no-repeat fixed;
-    background-size: cover;
-    height: 100%;
-    font-size: 100%; /* ~16px */
-    font-family: 'latolight', sans-serif;
-}
-
-body {
-    position: relative;
-    min-height: 100%;
-    background: rgba(241, 241, 254, 0.8);
 }
 
 /* Left column / Nav bar */
@@ -44,13 +43,13 @@ body {
     left: 0;
     z-index: 10;
     width: 15%;
-    background: #2F2FFF;
+    background: #0B83E0;
     color: #F1F1FE;
     box-shadow: 0.25em 0 0.5em rgba(0, 0, 0, 0.22);
 }
 
 header {
-    background: #0F0FD7;
+    background: #294F6D;
     position: relative;
     height: 15.625em;
     width: 100%;
@@ -82,14 +81,19 @@ header a{
     font-size: 0.8em;
 }
 
-q {
+#left_col>div {
+    height: 4em;
+}
+
+#left_col q {
+    display: none;
     font-size: 0.8em;
     font-style: italic;
     padding:  1em;
 }
 
 #nav {
-    margin-top: 1.5em;
+    margin-top: 0.5em;
     text-align: center;
 }
 
@@ -109,11 +113,11 @@ q {
 #nav a:hover,
 #nav a.active {
     background-color: #F1F1FE;
-    color: #2F2FFF;
+    color: #0B83E0;
     -webkit-transition: all 0.4s ease 0.2s;
        -moz-transition: all 0.4s ease 0.2s;
          -o-transition: all 0.4s ease 0.2s;
-            transition: all 0.4s ease 0.1s;
+            transition: all 0.4s ease 0.2s;
 }
 
 footer {
@@ -132,23 +136,25 @@ footer {
 /* Content area - global */
 
 #content {
-    color: #0F0FD7;
+    background: url(../static/img/bacground1080p.jpg) center center no-repeat;
+    background-size: cover;
     position: relative;
     width: 100%;
-    min-height: 100%;
+    height: 100%;
 }
 
 section {
     display: block;
     position: relative;
-    min-height: 67.5em; /* falback if vh is not supported*/
-    min-height: 100vh;
+    min-height: 100%;
     width: 100%;
+    background: rgba(241, 241, 254, 0.8);
 }
 
 article {
     padding: 16em 2em 2em 20%;
     width: 100%;
+    min-height: 100%;
     text-align: left;
 }
 
@@ -159,7 +165,7 @@ article {
     height: 15.625em;
     width: 100%;
     padding: 7em 2em 1em 20%;
-    background: #2F2FFF;
+    background: #0B83E0;
     color: #F1F1FE;
     box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.22);
 }
@@ -170,26 +176,19 @@ h1 {
     letter-spacing: 0.04em;
 }
 
-h2, h3 {
+h2 {
     font-weight: bold;
     letter-spacing: -0.04em;
     padding-left: 0.2em;
-    border-left: 0.1em solid #C3C1CB;
+    border-left: 0.1em solid #294F6D;
     margin: 0.5em 0;
-}
-
-h2 {
-    font-size: 2.8em;
-}
-
-h3 {
-    font-size: 2.2em;
+    font-size: 2.5em;
 }
 
 .clear {
     clear: both;
-    border-bottom: 0.15em solid #C3C1CB;
-    margin: 1.2em 0 2em 0;
+    border-bottom: 0.15em solid #294F6D;
+    margin-bottom: 2em;
 }
 
 .blank {
@@ -200,14 +199,21 @@ h3 {
 
 /* Home section */
 
-#home article > p:first-child {
-    margin: 1em 0 -0.35em 0;
+#home article q {
+    font-size: 2.3em;
+    font-style: italic;
+    letter-spacing: -0.05em;
+    width: 16em;
+}
+
+#home_title {
+    margin: 0 0 -0.35em 0;
     font-family: 'latomedium', sans-serif;
     font-size: 7em;
     letter-spacing: -0.1em;
 }
 
-#home article > p:nth-child(2) {
+#home_author {
     font-size: 2em;
     letter-spacing: -0.07em;
     margin-left: 0.2em;
@@ -216,7 +222,7 @@ h3 {
 .info {
     padding: 0.3em;
     margin: 1em 0 0 0;
-    border-left: 0.15em solid #C3C1CB;
+    border-left: 0.15em solid #294F6D;
 }
 
 .info li {
@@ -227,7 +233,7 @@ h3 {
 .info li i {
     width: 1.6em;
     padding: 0.2em;
-    border: 0.1em solid #0F0FD7;
+    border: 0.1em solid #294F6D;
     margin: 0 0.2em;
     text-align: center;
 }
@@ -260,27 +266,28 @@ h3 {
 }
 
 .col p span:first-child {
-    border-left: 0.15em solid #C3C1CB;
+    border-left: 0.15em solid #294F6D;
     padding: 0 0 0 0.2em;
 }
 
 #about ul {
     width: 68%;
+    margin-top: 0.3em;
 }
 
 #about ul li {
-    display: block;
+    display: inline-block;
     float: left;
-    padding: 0 0.6em 1em 0;
-    margin: 0.6em 0 0 0;
-    width: 30%;
+    height: 1.5em;
+    width: 33%;
+    margin-bottom: 0.6em;
 }
 
 .col p i,
 #about ul li i {
     width: 1em;
     text-align: center;
-    margin-right: 0.5em;
+    margin-right: 0.3em;
 }
 
 .foto {
@@ -302,7 +309,7 @@ h3 {
 .ujk_logo {
     display: inline-block;
     background: #fff url(/static/img/logo.png) center center no-repeat;
-    border-left: 0.3em solid #C3C1CB;
+    border-left: 0.3em solid #294F6D;
     height: 4.1625em;
     width: 19em;
     margin: 1em 0;
@@ -315,7 +322,7 @@ h3 {
     text-align: right;
     margin-top: 2em;
     padding: 0 0.3em;
-    border-left: 0.1em solid #C3C1CB;
+    border-left: 0.1em solid #294F6D;
 }
 
 .edu_ul {
@@ -334,7 +341,7 @@ h3 {
 .edu_ul li i {
     width: 1em;
     text-align: center;
-    margin-right: 0.5em;
+    margin-right: 0.3em;
 }
 
 .edu_ul li span {
@@ -361,7 +368,7 @@ h3 {
     display: inline-block;
     float: left;
     padding: 0.2em;
-    border: 0.1em solid #0F0FD7;
+    border: 0.1em solid #294F6D;
     margin: 0 0.2em;
     font-size: 2.5em;
     width: 1.6em;

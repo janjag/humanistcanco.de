@@ -112,7 +112,7 @@ ul li {
     display: inline-block;
     font-size: 1.2em;
     width: 100%;
-    vertical-align: middle;
+    vertical-align: top;
     margin-bottom: 0.75em;
 }
 
@@ -193,8 +193,8 @@ header {
 /* Quote block */
 
 #left_col>div {
-    height: 4em;
-    padding: 0.2em 1em;
+    height: 4.2em;
+    padding: 0.2em 2em;
 }
 
 #left_col q {
@@ -206,9 +206,8 @@ header {
 /* Navigation */
 
 #nav {
-    padding: 0 0 0 1em;
+    padding: 0 0 0 1.8em;
     border: none;
-    text-align: center;
 }
 
 #nav li {
@@ -222,6 +221,14 @@ header {
     color: #F1F1FE;
     width: 100%;
     padding: 0.5em;
+}
+
+#nav i {
+    border: none;
+}
+
+#nav span {
+    font-style: normal;
 }
 
 #nav li:hover,
@@ -257,6 +264,7 @@ footer {
     font-style: italic;
     letter-spacing: -0.05em;
     width: 16em;
+    margin-bottom: 0.5em;
 }
 
 #home_title {
@@ -269,7 +277,7 @@ footer {
 #home_author {
     font-size: 2em;
     letter-spacing: -0.07em;
-    margin-left: 0.2em;
+    margin:0 0 1.2em 0.2em;
 }
 
 .info {

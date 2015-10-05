@@ -163,7 +163,7 @@ header {
     position: relative;
     height: 15.625em;
     width: 100%;
-    padding: 1em;
+    padding: 1em 2em 1em 1em;
     text-align: right;
 }
 
@@ -184,9 +184,6 @@ header {
 }
 
 #author {
-    position: absolute;
-    bottom: 1.2em;
-    right: 1.5em;
     font-size: 0.8em;
 }
 
@@ -338,7 +335,8 @@ footer {
 
 .ujk_logo {
     display: inline-block;
-    background: #fff url(/static/img/logo.png) center center no-repeat;
+    background: #fff url(../static/img/logo.png) center center no-repeat;
+    background-size: contain;
     border-left: 0.3em solid #294F6D;
     height: 4.1625em;
     width: 19em;
@@ -353,4 +351,298 @@ footer {
     margin-top: 2em;
     padding: 0 0.3em;
     border-left: 0.1em solid #294F6D;
+}
+
+/* Media queries */
+
+/* width < 1160px/16px=72.5em */
+
+@media screen and (max-width: 72.5em) {
+    #left_col {
+        width: 18%;
+    }
+    
+    .h1_wrapper, article {
+        padding-left: 22%;
+    }
+    
+    header, .h1_wrapper {
+        height: 14em;
+    }
+    
+    #home article q {
+        font-size: 1.8em;
+    }
+    
+    #home .title {
+        font-size: 5.5em;
+    }
+    
+    #home .sub_title {
+        font-size: 1.5em;
+    }
+    
+    .info {
+        font-size: 1.2em;
+    }
+    
+    .col {
+        width: 55%;
+        margin-right: 1em;
+    }
+    
+    .col p {
+        margin: 1em 0;
+    }
+    
+    .foto {
+        width: 40%;
+    }
+}
+
+/* width <1024px/16px=64em */
+
+@media screen and (max-width: 64em) {
+    #left_col .title {
+        font-size: 5.5em;
+    }
+    
+    #left_col .sub_title {
+        font-size: 1.17em;
+    }
+    
+    #author {
+        font-size: 0.8em;
+    }
+    
+    #left_col q {
+        font-size: 0.6em;
+    }
+    
+    #nav li {
+        font-size: 1.2em;
+    }
+    
+    header, .h1_wrapper {
+        height: 12em;
+    }
+    
+    .h1_wrapper {
+        padding-top: 4em;
+    }
+    
+    #home article q {
+        font-size: 1.25em;
+    }
+    
+    #home .title {
+        font-size: 4em;
+    }
+    
+    #home .sub_title {
+        font-size: 1.2em;
+    }
+    
+    ul li {
+        font-size: 1em;
+    }
+    
+    h1 {
+        font-size: 3em;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+    
+    .col {
+        font-size: 1em;
+    }
+    
+    .multi_col li {
+        width: 48%;
+    }
+}
+
+/* width <800px/16px=50em */
+
+@media screen and (max-width: 50em) {
+    #left_col .title {
+        font-size: 4.5em;
+    }
+    
+    #left_col .sub_title {
+        font-size: 1em;
+    }
+    
+    #author {
+        font-size: 0.8em;
+    }
+    
+    #left_col div {
+        display: none;
+    }
+    
+    #nav li {
+        font-size: 1em;
+    }
+    
+    footer {
+        font-size: 0.5em;
+    }
+    
+    header, .h1_wrapper {
+        height: 10em;
+    }
+    
+    .h1_wrapper {
+        padding-top: 3em;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    h2 {
+        font-size: 1.8em;
+    }
+    
+    .foto {
+        width: 30%;
+        height: 15em;
+    }
+    
+    .col {
+        width: 66%;
+    }
+    
+    .date {
+        font-size: 1em;
+    }
+    
+    .dual_col li {
+        width: 100%;
+    }
+    
+/* width <690px/16px=43.125em */
+
+@media screen and (max-width: 43.125em) {
+    #left_col {
+    width: 13%;
+    }
+    
+    article, .h1_wrapper {
+        padding-left: 16%;
+    }
+    
+    article {
+        padding-right: 1em;
+    }
+    
+    .h1_wrapper {
+        height: 8em;
+        padding-top: 2em;
+    }
+    
+    header, footer, #nav li span {
+        display: none;
+    }
+    
+    #nav {
+        padding: 0;
+    }
+    
+    #nav li a {
+        height: 4em;
+    }
+    
+    #nav li a i {
+        font-size: 2em;
+    }
+    
+    .foto, .col {
+        width: 100%;
+        margin: 0;
+        padding-right: 0;
+    }
+    
+    .ujk_logo {
+        width: 15.5em;
+        height: 3.8em;
+    }
+}
+    
+/* width <570px/16px=35.625em */
+
+@media screen and (max-width: 35.625em) { 
+    #nav a {
+        padding: 0.2em;
+        height: 1.5em;
+    }
+    
+    #home article q {
+        font-size: 1em;
+    }
+    
+    #home .title {
+        font-size: 3em;
+    }
+    
+    #home .sub_title {
+        font-size: 1em;
+    }
+    
+    h1 {
+        font-size: 2.2em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    .ujk_logo {
+        width: 13.75em;
+        height: 3.4em;
+    }
+}
+    
+/* width <480px/16px=30em */
+
+@media screen and (max-width: 30em) {
+    #left_col {
+        width: 16%;
+    }
+    
+    article, .h1_wrapper {
+        padding-left: 20%;
+    }
+    
+    .h1_wrapper {
+        height: 6em;
+    }
+    
+    #home article q {
+        font-size: 1em;
+    }
+    
+    #home .title {
+        font-size: 2.4em;
+    }
+    
+    #home .sub_title {
+        font-size: 1em;
+    }
+    
+    .multi_col li {
+        width: 100%;
+    }
+    
+    .ujk_logo {
+        width: 8.5em;
+        height: 2.5em;
+    }
+    
+    .date {
+        font-size: 0.75em;
+    }
 }

@@ -398,11 +398,15 @@ footer {
     .foto {
         width: 40%;
     }
+    
+    .multi_col li {
+        width: 48%;
+    }
 }
 
-/* width <1024px/16px=64em */
+/* width <1030px/16px=64.375em */
 
-@media screen and (max-width: 64em) {
+@media screen and (max-width: 64.375em) {
     #left_col .title {
         font-size: 5.5em;
     }
@@ -415,16 +419,21 @@ footer {
         font-size: 0.8em;
     }
     
-    #left_col q {
-        font-size: 0.6em;
+    #left_col div {
+        display: none;
+    }
+    
+    #nav {
+        margin-top: 0;
+        padding: 0;
     }
     
     #nav li {
-        font-size: 1.2em;
+        font-size: 1.25em;
     }
     
     header, .h1_wrapper {
-        height: 12em;
+        height: 11em;
     }
     
     .h1_wrapper {
@@ -458,10 +467,6 @@ footer {
     .col {
         font-size: 1em;
     }
-    
-    .multi_col li {
-        width: 48%;
-    }
 }
 
 /* width <800px/16px=50em */
@@ -479,12 +484,8 @@ footer {
         font-size: 0.8em;
     }
     
-    #left_col div {
-        display: none;
-    }
-    
     #nav li {
-        font-size: 1em;
+        font-size: 1.1em;
     }
     
     footer {
@@ -523,16 +524,17 @@ footer {
     .dual_col li {
         width: 100%;
     }
-    
+}
+
 /* width <690px/16px=43.125em */
 
 @media screen and (max-width: 43.125em) {
     #left_col {
-    width: 13%;
+    width: 14%;
     }
     
     article, .h1_wrapper {
-        padding-left: 16%;
+        padding-left: 17%;
     }
     
     article {
@@ -548,16 +550,13 @@ footer {
         display: none;
     }
     
-    #nav {
-        padding: 0;
-    }
-    
     #nav li a {
         height: 4em;
     }
     
     #nav li a i {
         font-size: 2em;
+        width: 100%;
     }
     
     .foto, .col {
@@ -572,12 +571,11 @@ footer {
     }
 }
     
-/* width <570px/16px=35.625em */
+/* width <585px/16px=36.5625em */
 
-@media screen and (max-width: 35.625em) { 
-    #nav a {
-        padding: 0.2em;
-        height: 1.5em;
+@media screen and (max-width: 36.5625em) { 
+    #nav li a {
+        height: 3.5em;
     }
     
     #home article q {
@@ -600,6 +598,10 @@ footer {
         font-size: 1.5em;
     }
     
+    .multi_col li {
+        width: 100%;
+    }
+    
     .ujk_logo {
         width: 13.75em;
         height: 3.4em;
@@ -610,11 +612,19 @@ footer {
 
 @media screen and (max-width: 30em) {
     #left_col {
-        width: 16%;
+        width: 15%;
     }
     
     article, .h1_wrapper {
-        padding-left: 20%;
+        padding-left: 18%;
+    }
+    
+    #nav li a {
+        height: 2.5em;
+    }
+    
+    #nav li a i {
+        font-size: 1.5em;
     }
     
     .h1_wrapper {
@@ -622,23 +632,19 @@ footer {
     }
     
     #home article q {
-        font-size: 1em;
+        font-size: 0.8em;
     }
     
     #home .title {
-        font-size: 2.4em;
+        font-size: 2.2em;
     }
     
     #home .sub_title {
         font-size: 1em;
     }
     
-    .multi_col li {
-        width: 100%;
-    }
-    
     .ujk_logo {
-        width: 8.5em;
+        width: 7.8em;
         height: 2.5em;
     }
     

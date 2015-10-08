@@ -257,7 +257,17 @@ footer {
 /* Home section */
 
 #home {
-    min-height: 100%;
+    height: 100%;
+}
+
+#home article {
+    height: inherit;
+    display: table;
+}
+
+#home article div {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 #home article q {
@@ -265,7 +275,7 @@ footer {
     font-style: italic;
     letter-spacing: -0.05em;
     width: 16em;
-    margin: 1.5em 0 0.5em 0;
+    margin: 0 0 0.5em 0;
 }
 
 #home .sub_title {
@@ -448,7 +458,6 @@ footer {
     
     #home article q {
         font-size: 1.25em;
-        margin: 0.2em 0 0.5em 0;
     }
     
     #home .title {
@@ -601,7 +610,6 @@ footer {
     
     #home article q {
         font-size: 1em;
-        margin: 0 0 0.25em 0;
     }
     
     #home .title {

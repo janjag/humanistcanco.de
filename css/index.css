@@ -257,17 +257,7 @@ footer {
 /* Home section */
 
 #home {
-    height: 100%;
-}
-
-#home article {
-    height: inherit;
-    display: table;
-}
-
-#home article div {
-    display: table-cell;
-    vertical-align: middle;
+    min-height: 100%;
 }
 
 #home article q {
@@ -275,7 +265,7 @@ footer {
     font-style: italic;
     letter-spacing: -0.05em;
     width: 16em;
-    margin: 0 0 0.5em 0;
+    margin: 1.5em 0 0.5em 0;
 }
 
 #home .sub_title {
@@ -387,7 +377,7 @@ footer {
     }
     
     #home article q {
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
     
     #home .title {
@@ -458,6 +448,7 @@ footer {
     
     #home article q {
         font-size: 1.25em;
+        margin: 0.2em 0 0.5em 0;
     }
     
     #home .title {
@@ -522,6 +513,10 @@ footer {
     
     h2 {
         font-size: 1.8em;
+    }
+    
+    .info {
+        font-size: 1em;
     }
     
     .photo {
@@ -606,6 +601,7 @@ footer {
     
     #home article q {
         font-size: 1em;
+        margin: 0 0 0.25em 0;
     }
     
     #home .title {

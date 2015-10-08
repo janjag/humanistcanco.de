@@ -387,7 +387,7 @@ footer {
     }
     
     #home article q {
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
     
     #home .title {
@@ -522,6 +522,10 @@ footer {
     
     h2 {
         font-size: 1.8em;
+    }
+    
+    .info {
+        font-size: 1em;
     }
     
     .photo {
@@ -662,7 +666,7 @@ footer {
     }
     
     #home .title {
-        font-size: 2.2em;
+        font-size: 2em;
     }
     
     #home .sub_title {

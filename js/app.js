@@ -1,10 +1,10 @@
 'use strict'
 
 var sections = $('section')
-  , nav = $('#nav')
-  , nav_height = nav.outerHeight();
+  , nav = $('#nav');
 
-$(window).on('scroll', function () {
+
+function scroller() {
   var cur_pos = $(this).scrollTop();
   
   sections.each(function() {
@@ -14,7 +14,6 @@ $(window).on('scroll', function () {
     if (cur_pos >= top && cur_pos <= bottom) {
       nav.find('a').removeClass('active');
       
-      $(this).addClass('active');
       nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
         if(nav.find('a[href="#home"]').hasClass('active')) {
             $('#left_col').find('q').hide(700, 'swing');
@@ -24,7 +23,13 @@ $(window).on('scroll', function () {
         }
     }
   });
-});
+}
+
+$(window).on('scroll', scroller);
+
+//test code to se if there are any changes on some devices
+$(window).on('touchmove', scroller);
+
 
 $('#left_col').find('a').on('click', function () {
   var $el = $(this)

@@ -317,7 +317,7 @@ footer {
     margin-right: 0.3em;
 }
 
-.foto {
+.photo {
     float: right;
     right: 2em;
     background: url(../static/img/me.jpg) top center no-repeat;
@@ -330,6 +330,22 @@ footer {
 /* Skills */
 
 /* Projects */
+
+.project_photo {
+    float: left;
+    width: 40%;
+    margin-right: 1.5em;
+}
+
+.project_photo img {
+    width: 100%;
+    height: auto;
+}
+
+.project_info {
+    float: left;
+    width: 55%;
+}
 
 /* Education section */
 
@@ -395,7 +411,7 @@ footer {
         margin: 1em 0;
     }
     
-    .foto {
+    .photo {
         width: 40%;
     }
     
@@ -508,7 +524,7 @@ footer {
         font-size: 1.8em;
     }
     
-    .foto {
+    .photo {
         width: 30%;
         height: 15em;
     }
@@ -519,6 +535,16 @@ footer {
     
     .date {
         font-size: 1em;
+    }
+    
+    .project_photo {
+        float: none;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .project_info {
+        width: 100%;
     }
     
     .dual_col li {
@@ -559,7 +585,7 @@ footer {
         width: 100%;
     }
     
-    .foto, .col {
+    .photo, .col {
         width: 100%;
         margin: 0;
         padding-right: 0;

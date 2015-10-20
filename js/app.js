@@ -38,8 +38,6 @@ $('#left_col').find('a').on('click', function () {
   $('html, body').animate({
     scrollTop: $(id).offset().top
   }, 1000);
-  
-  return false;
 });
 
 (function age () {

@@ -1,11 +1,8 @@
 /* Reset */
 
-* {
-    box-sizing: border-box;
-}
-
-body, h1, h2, h3, h4, ul, li, p, section, article, img, q {
+a, article, body, div, footer, h1, h2, header, i, img, li, p, q, section, span, strong, ul {
     border: 0;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -13,16 +10,16 @@ body, h1, h2, h3, h4, ul, li, p, section, article, img, q {
 /* Global */
 
 html {
-    height: 100%;
-    font-size: 100%; /* ~16px */
-    font-family: 'latolight', sans-serif;
-    color: #294F6D;
     background-color: #1C649B;
+    color: #294F6D;
+    font-family: 'latolight', sans-serif;
+    font-size: 100%; /* ~16px */
+    height: 100%;
 }
 
 body {
-    position: relative;
     height: 100%;
+    position: relative;
 }
 
 a, q, article, section {
@@ -40,39 +37,39 @@ strong {
 }
 
 h1 {
-    font-size: 3.6em;
+    font-size: 5em;
     letter-spacing: 0.04em;
 }
 
 h2 {
-    letter-spacing: -0.04em;
-    padding-left: 0.2em;
     border-left: 0.1em solid #294F6D;
-    margin: 0.5em 0;
     font-size: 2.5em;
+    letter-spacing: -0.04em;
+    margin: 0.5em 0;
+    padding-left: 0.2em;
 }
 
-#wrapper {
-    width: 120.125em;
+.wrapper {
     height: 100%;
     margin: 0 auto;
+    width: 120.125em;
 }
 
 /* Unsorted list global config */
 
 ul {
-    margin: 0.5em 0;
-    list-style: none;
     border-left: 0.1em solid #294F6D;
+    list-style: none;
+    margin: 0.5em 0;
     padding: 0.1em 0 0.1em 0.5em;
 }
 
 ul li {
     display: inline-block;
     font-size: 1.2em;
-    width: 100%;
-    vertical-align: top;
     margin-bottom: 0.75em;
+    vertical-align: top;
+    width: 100%;
 }
 
 ul li strong,
@@ -86,14 +83,14 @@ ul li span {
 }
 
 ul li i {
-    display: inline-block;
+    border: 0.1em solid #294F6D;
+    display: block;
     float: left;
     font-size: 2em;
-    padding: 0.2em;
     margin-right: 0.3em;
-    border: 0.1em solid #294F6D;
-    width: 1.75em;
+    padding: 0.2em;
     text-align: center;
+    width: 1.75em;
 }
 
 .dual_col li {
@@ -106,33 +103,33 @@ ul li i {
 
 /* Left column */
 
-#left_col {
-    float: left;
-    position: fixed;
-    height: 100%;
-    top: 0;
-    z-index: 10;
-    width: 15.625em;
+.left_col {
     background: #0B83E0;
-    color: #F1F1FE;
     box-shadow: 0.25em 0 0.5em rgba(0, 0, 0, 0.22);
+    color: #F1F1FE;
+    float: left;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 15.625em;
+    z-index: 10;
 }
 
 /* Logo section */
 
 header {
     background: #294F6D;
-    position: relative;
     height: 15.625em;
+    padding: 1em 1em 1em 20%;
+    position: relative;
+    text-align: left;
     width: 100%;
-    padding: 1em 2em 1em 1em;
-    text-align: right;
 }
 
 .title {
-    margin: 0 0 -0.35em 0;
     font-size: 7em;
     letter-spacing: -0.05em;
+    margin: 0 0 -0.35em 0;
 }
 
 .title strong {
@@ -143,20 +140,17 @@ header {
     font-size: 1.5em;
     letter-spacing: -0.1em;
     margin:0 0 1.2em 0.2em;
-}
-
-#author {
-    font-size: 0.8em;
+    padding-left: 0.125em;
 }
 
 /* Quote block */
 
-#left_col>div {
+.left_col>div {
     height: 3em;
     padding: 0.2em 0.2em 0.2em 1em;
 }
 
-#left_col q {
+.left_col q {
     display: none;
     font-size: 0.8em;
     font-style: italic;
@@ -164,35 +158,35 @@ header {
 
 /* Navigation */
 
-#nav {
-    padding: 0 0 0 1em;
+.nav {
     border: none;
+    padding: 0 0 0 1em;
 }
 
-#nav li {
+.nav li {
+    font-family: 'latomedium', sans-serif;
     font-size: 1.6em;
     letter-spacing: -0.11em;
-    font-family: 'latomedium', sans-serif;
     margin: 0;
 }
 
-#nav a {
+.nav a {
     color: #F1F1FE;
-    width: 100%;
     padding: 0.5em;
+    width: 100%;
 }
 
-#nav i {
+.nav i {
     border: none;
 }
 
-#nav span {
+.nav span {
     font-style: normal;
 }
 
-#nav li:hover,
-#nav a:hover,
-#nav a.active {
+.nav li:hover,
+.nav a:hover,
+.nav a.active {
     background-color: #F1F1FE;
     color: #0B83E0;
     -webkit-transition: all 0.4s ease 0.2s;
@@ -204,102 +198,98 @@ header {
 /* Footer */
 
 footer {
-    display: block;
-    position: absolute;
     bottom: 0;
-    left: 0;
-    text-transform: uppercase;
+    display: block;
     font-size: 0.6em;
+    left: 0;
     letter-spacing: 0.2em;
     padding: 0.3em 0;
-    width: 100%;
+    position: absolute;
     text-align: center;
+    text-transform: uppercase;
+    width: 100%;
 }
 
 /* Content area */
 
-#content {
-    padding-left: 15.625em;
+.content {
     background: url(../static/img/bacground1080p.jpg) center center no-repeat;
     background-size: cover;
+    height: 100%;
+    padding-left: 15.625em;
     position: relative;
     width: 100%;
-    height: 100%;
 }
 
 section {
+    background: rgb(241, 241, 254);
     min-height: 100%;
     width: 100%;
-    background: rgb(241, 241, 254);
 }
 
 article {
-    padding: 1em 2em 2em 2em;
-    width: 100%;
     min-height: 100%;
+    padding: 1em 2em 2em 2em;
     text-align: left;
+    width: 100%;
 }
 
 .h1_wrapper {
-    height: 15.625em;
-    width: 100%;
-    padding: 6em 2em 1em 2em;
     background: #0B83E0;
-    color: #F1F1FE;
     box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.22);
+    color: #F1F1FE;
+    height: 15.625em;
+    padding: 3.375em 2em 1em 2em;
+    width: 100%;
 }
 
 .clear {
-    clear: both;
     border-bottom: 0.15em solid #294F6D;
+    clear: both;
     margin-bottom: 2em;
 }
 
 .blank {
-    width: 1em;
-    margin: 0;
     border: none;
+    margin: 0;
+    width: 1em;
 }
 
 /* Home section */
 
-#home {
+.home {
+    background: rgba(241, 241, 254, 0.5);
     height: 100%;
-    background:  rgba(241, 241, 254, 0.8);
 }
 
-#home:after {
-    content: '';
-    display: block;
-    height: 2em;
-    width: 100%;
-    background: rgb(241, 241, 254);
-}
-
-#home article {
-    height: inherit;
+.home article {
     display: table;
+    height: inherit;
 }
 
-#home article div {
+.home article div {
     display: table-cell;
     vertical-align: middle;
 }
 
-#home article q {
-    font-size: 2.3em;
-    font-style: italic;
-    letter-spacing: -0.05em;
-    width: 16em;
-    margin: 0 0 0.5em 0;
+.home .h1_wrapper {
+    padding-top: 1em;
 }
 
-#home .sub_title {
-    font-size: 2.5em;
+.home .h1_wrapper q {
+    font-size: 1.2em;
+    font-style: italic;
+    letter-spacing: -0.05em;
+    margin: 0 0 0.5em 0;
+    position: absolute;
+    right: 1em;
+    top: 0.25em;
+    width: 16em;
 }
 
 .info {
-    font-size: 1.5em;   
+    font-size: 1.5em; 
+    width: 18em;
 }
 
 /* About me section */
@@ -311,11 +301,10 @@ article {
 .col {
     display: block;
     float: left;
-    width: 34%;
-    padding-right: 2em;
     line-height: 1.5em;
+    padding-right: 2em;
     text-align: justify;
-    vertical-align: bottom;
+    width: 34%;
 }
 
 .col p {
@@ -328,19 +317,19 @@ article {
 }
 
 .col p i {
-    width: 1em;
-    text-align: center;
     margin-right: 0.3em;
+    text-align: center;
+    width: 1em;
 }
 
 .photo {
-    float: right;
-    right: 2em;
     background: url(../static/img/me.jpg) top center no-repeat;
     background-size: contain;
+    float: right;
+    height: 32em;
+    right: 2em;
     text-indent: -9999em;
     width: 31%;
-    height: 32em;
 }
 
 /* Skills */
@@ -349,13 +338,13 @@ article {
 
 .project_photo {
     float: left;
-    width: 40%;
     margin-right: 1.5em;
+    width: 40%;
 }
 
 .project_photo img {
-    width: 100%;
     height: auto;
+    width: 100%;
 }
 
 .project_info {
@@ -366,22 +355,22 @@ article {
 /* Education section */
 
 .ujk_logo {
-    display: inline-block;
     background: #fff url(../static/img/logo.png) top left no-repeat;
     border-left: 0.3em solid #294F6D;
+    display: inline-block;
     height: 4.1625em;
-    width: 6.5em;
     margin: 1em 0;
     text-indent: -9999em;
+    width: 6.5em;
 }
 
 .date {
+    border-left: 0.1em solid #294F6D;
     float: right;
     font-size: 1.4em;
-    text-align: right;
     margin-top: 2em;
     padding: 0 0.3em;
-    border-left: 0.1em solid #294F6D;
+    text-align: right;
 }
 
 /* Media queries */
@@ -389,20 +378,20 @@ article {
 /* width < 1922px/16px=120.125em */
 
 @media screen and (max-width: 120.125em){
-    #wrapper {
-        width: 100%;
+    .wrapper {
         margin: 0;
+        width: 100%;
     }
 }
 
 /* width < 1160px/16px=72.5em */
 
 @media screen and (max-width: 72.5em) {
-    #left_col {
+    .left_col {
         width: 12em;
     }
     
-    #content {
+    .content {
         padding-left:  12em;
     }
     
@@ -410,15 +399,23 @@ article {
         height: 14em;
     }
     
-    #home article q {
-        font-size: 1.6em;
+    .h1_wrapper {
+        padding-top: 2.75em;
     }
     
-    #home .title {
+    h1 {
+        font-size: 4em;
+    }
+    
+    .home .h1_wrapper q {
+        font-size: 1em;
+    }
+    
+    .title {
         font-size: 5.5em;
     }
     
-    #home .sub_title {
+    .sub_title {
         font-size: 1.5em;
     }
     
@@ -427,8 +424,8 @@ article {
     }
     
     .col {
-        width: 55%;
         margin-right: 1em;
+        width: 55%;
     }
     
     .col p {
@@ -447,19 +444,15 @@ article {
 /* width <1030px/16px=64.375em */
 
 @media screen and (max-width: 64.375em) {
-    #left_col .title {
-        font-size: 5.5em;
+    .title {
+        font-size: 4.25em;
     }
     
-    #left_col .sub_title {
+    .sub_title {
         font-size: 1.17em;
     }
     
-    #author {
-        font-size: 0.8em;
-    }
-    
-    #nav li {
+    .nav li {
         font-size: 1.25em;
     }
     
@@ -467,20 +460,16 @@ article {
         height: 11em;
     }
     
+    .home .h1_wrapper {
+        padding-top: 1.25em;
+    }
+    
     .h1_wrapper {
-        padding-top: 4em;
+        padding-top: 2.5em;
     }
     
-    #home article q {
-        font-size: 1.25em;
-    }
-    
-    #home .title {
-        font-size: 4em;
-    }
-    
-    #home .sub_title {
-        font-size: 1.2em;
+    .home article q {
+        font-size: 1.5em;
     }
     
     ul li {
@@ -503,28 +492,37 @@ article {
 /* width <800px/16px=50em */
 
 @media screen and (max-width: 50em) {
-    header, #left_col div, footer, #nav li a span {
+    header, .left_col div, footer, .nav li a span {
         display: none;
     }
     
-    #left_col {
+    .left_col {
         width: 6em;
     }
     
-    #content{
+    .content{
         padding-left:  6em;
     }
     
-    #nav {
-        padding: 0;
-        margin: 1em 0 0 0;
+    .home {
+        height: auto;
+        min-height: 50%;
     }
     
-    #nav li a {
+    .home .h1_wrapper q {
+        font-size: 0.75em;
+    }
+    
+    .nav {
+        margin-top: 2em;
+        padding: 0;
+    }
+    
+    .nav li a {
         height: 4em;
     }
     
-    #nav li a i {
+    .nav li a i {
         font-size: 2em;
         width: 100%;
     }
@@ -534,6 +532,7 @@ article {
     }
     
     .h1_wrapper {
+        padding-left: 1em;
         padding-top: 3em;
     }
     
@@ -550,8 +549,8 @@ article {
     }
     
     .photo {
-        width: 30%;
         height: 15em;
+        width: 30%;
     }
     
     .col {
@@ -564,8 +563,8 @@ article {
     
     .project_photo {
         float: none;
-        width: 80%;
         margin: 0 auto;
+        width: 80%;
     }
     
     .project_info {
@@ -580,11 +579,15 @@ article {
 /* width <690px/16px=43.125em */
 
 @media screen and (max-width: 43.125em) {
-    #left_col {
+    .left_col {
         width: 5.25em;
     }
     
-    #content{
+    .nav {
+        margin-top: 1.25em;
+    }
+    
+    .content{
         padding-left:  5.25em;
     }
     
@@ -597,50 +600,54 @@ article {
         padding-top: 2em;
     }
     
-    .photo, .col {
+    .info {
         width: 100%;
+    }
+    
+    .photo, .col {
         margin: 0;
         padding-right: 0;
+        width: 100%;
     }
 }
     
-/* width <620px/16px=38.75em */
+/* width <630px/16px=38.75em */
 
-@media screen and (max-width: 38.75em) { 
-    #left_col {
+@media screen and (max-width: 39.375em) { 
+    .left_col {
         width: 3.5em;
     }
     
-    #content{
+    .content{
         padding-left: 3.5em;
     }
     
-    #nav li a {
+    .nav li a {
         height: 2.5em;
     }
     
-    #nav li a i {
+    .nav li a i {
         font-size: 1.25em;
     }
     
-    #home article q {
-        font-size: 1em;
+    .home .h1_wrapper q {
+        font-size: 0.75em;
     }
     
-    #home .title {
+    .home .title {
         font-size: 3em;
     }
     
-    #home .sub_title {
+    .home .sub_title {
         font-size: 1em;
     }
     
     h1 {
-        font-size: 2.2em;
+        font-size: 1.6em;
     }
     
     h2 {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
     
     .multi_col li {
@@ -655,15 +662,15 @@ article {
         height: 6em;
     }
     
-    #home article q {
-        font-size: 0.8em;
+    .home .h1_wrapper q {
+        display: none;
     }
     
-    #home .title {
-        font-size: 2em;
+    .home .title {
+        font-size: 1.75em;
     }
     
-    #home .sub_title {
+    .home .sub_title {
         font-size: 1em;
     }
     

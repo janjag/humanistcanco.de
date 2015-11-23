@@ -18,12 +18,10 @@
     </head>
     
     <body>
-        <div id="wrapper">
-            <div id="left_col">
+        <div id="wrapper" class="wrapper">
+            <div id="left_col" class="left_col">
             <header>
                 <p class="title"><strong>hcc</strong></p>
-                <p class="sub_title">humanistcanco.de</p>
-                <p id="author">by Jan Jagiela</p>
             </header>
             <div>
                 <q>
@@ -32,7 +30,7 @@
                 </q>
             </div>
             
-            <ul id="nav">
+            <ul id="nav" class="nav">
                 <li><a href="#home" class="active"><i class="fa fa-home"></i><span>Home</span></a></li>
                 <li><a href="#about"><i class="fa fa-user"></i><span>About Me</span></a></li>
                 <!-- <li><a href="#skills"><i class="fa fa-align-left fa-rotate-270"></i><span>Skills</span></a></li> -->
@@ -42,24 +40,25 @@
             </ul>
                 
             <footer>    
-                <p>Copyright <i class="fa fa-copyright"></i>2015</p>
+                <p>Copyright <i class="fa fa-copyright"></i><span id="year"></span></p>
             </footer>
             </div>
 
-            <div id="content">
-                <section id="home">
-                    <article>
-                        <div>
-                        <q>
+            <div id="content" class="content">
+                <section id="home" class="home">
+                   <div class="h1_wrapper">
+                       <p class="title"><strong>humanistcanco.de</strong></p>
+                       <p class="sub_title">by Jan Jagiela</p>
+                       <q>
                             I have no idols. I admire work, dedication and competence.
                             <strong>-&nbsp;Ayrton&nbsp;Senna</strong>
                         </q>
-                        <p class="title"><strong>humanistcanco.de</strong></p>
-                        <p class="sub_title">by Jan Jagiela</p>
+                   </div>
+                    <article>
+                        <div>
                         <ul class="info">
                             <li>
-                                <i class="fa fa-envelope-o"></i>
-                                <a href="mailto:janjag@humanistcanco.de">janjag @humanistcanco.de</a>
+                                <i class="fa fa-envelope-o"></i><a href="mailto:janjag@humanistcanco.de">janjag @humanistcanco.de</a>
                             </li>
                             <li>
                                 <i class="fa fa-mobile"></i>
@@ -83,15 +82,15 @@
                            My photo
                        </div>
                        <div class="col">
-                       <p><span>H</span>ello, my name is John Jagiela, but call me Johnny. Like the title of this page suggest I'm a humanist, but recently I switched my interest to front-end. I'm <span id="age"></span> years old, and I live in Starachowice – small city near Kielce in Poland. Currently unemployed.
+                       <p><span>H</span>ello, my name is Jan Jagiela, but call me Johnny. By heart I'm a humanist, but recently I got interested in programming. It has been front-end which caught my eye. So I decide to prove that Humanists Can Code. I'm <span id="age"></span> years old, and I live in Starachowice – small city near Kielce in Poland.
                        </p>
-                       <p>I always liked to know how things work. To expand my knowledge about web I've asked my good friend <a href="http://borntoco.de" target="_blank"><i class="fa fa-external-link-square"></i>Lukasz  “op1ekun” Piatkowski</a> to explain me the basics. And so the story begins... 
+                       <p>I like to know things, and how they work. I always ask questions to expand my knowledge. It's always a good ideas to leverage on someone else's experience, so I've asked my good friend Lukasz <a href="http://borntoco.de" target="_blank"> “op1ekun”</a> Piatkowski to explain me the basics. And so the story begins... 
                        </p>
                        </div>
                        <div class="col">
-                       <p>I've completed some on-line courses on Code School about <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> and <strong>Git</strong>. While writing I'm trying to keep the code simple and easy to read. I can't say that I'm good at it – I'm still novice, but will improve by putting all my current skills to use in this and next projects.
+                       <p>While writing I'm trying to keep the code simple and easy to read. I'm still learning, and I know that only hard work can make me a better programmer. That is why I contribute to open source projects on GitHub. Whether I stick to front-end or venture deeper into server-side this experience is invaluable.
                        </p>
-                       <p>For entertainment I play video games or watch some e-sports tournaments – yup, nothing special here. However that's not all. Hiking around local woods and mountains, visiting medieval events and ruins – that is what I choose on weekends.
+                       <p>For entertainment I play video games or watch some e-sports tournaments. However that's not all. Hiking around local woods and mountains, visiting medieval events and ruins – that is what I choose on weekends.
                        </p>
                        </div>
                        <div class="clear blank"></div>

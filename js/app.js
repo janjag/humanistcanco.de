@@ -12,10 +12,10 @@ function scroller() {
         bottom = top + $(this).outerHeight();
     
     if (cur_pos >= top && cur_pos <= bottom) {
-      nav.find('a').removeClass('active');
+      nav.find('li a').removeClass('active');
       
-      nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
-        if(nav.find('a[href="#home"]').hasClass('active')) {
+      nav.find('li a[href="#'+$(this).attr('id')+'"]').addClass('active');
+        if(nav.find('li a[href="#home"]').hasClass('active')) {
             $('#left_col').find('q').hide(700, 'swing');
         }
         else {
@@ -45,4 +45,5 @@ var now = new Date(),
     year_now = now.getFullYear(),
     diff = year_now - 1987;
 document.getElementById("age").innerHTML = diff;
+document.getElementById("year").innerHTML = year_now;
 })();

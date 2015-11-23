@@ -333,6 +333,25 @@ article {
     width: 31%;
 }
 
+.ujk_logo {
+    background: #fff url(../static/img/logo.png) top left no-repeat;
+    border-left: 0.3em solid #294F6D;
+    display: inline-block;
+    height: 4.1625em;
+    margin: 1em 0;
+    text-indent: -9999em;
+    width: 6.5em;
+}
+
+.date {
+    border-left: 0.1em solid #294F6D;
+    float: right;
+    font-size: 1.4em;
+    margin-top: 2em;
+    padding: 0 0.3em;
+    text-align: right;
+}
+
 /* Skills */
 
 .skills {
@@ -355,27 +374,6 @@ article {
 .project_info {
     float: left;
     width: 55%;
-}
-
-/* Education section */
-
-.ujk_logo {
-    background: #fff url(../static/img/logo.png) top left no-repeat;
-    border-left: 0.3em solid #294F6D;
-    display: inline-block;
-    height: 4.1625em;
-    margin: 1em 0;
-    text-indent: -9999em;
-    width: 6.5em;
-}
-
-.date {
-    border-left: 0.1em solid #294F6D;
-    float: right;
-    font-size: 1.4em;
-    margin-top: 2em;
-    padding: 0 0.3em;
-    text-align: right;
 }
 
 /* Media queries */

@@ -139,8 +139,11 @@ header {
 .sub_title {
     font-size: 1.5em;
     letter-spacing: -0.1em;
-    margin:0 0 1.2em 0.2em;
-    padding-left: 0.125em;
+    padding-left: 0.2em;
+}
+
+.left_col .sub_title {
+    margin-left: 0.0417em;
 }
 
 /* Quote block */
@@ -273,7 +276,7 @@ article {
 
 .home .title {
     font-size: 5em;
-    margin-bottom: -0.375em;
+    margin-bottom: -0.385em;
 }
 
 .home .h1_wrapper q {
@@ -425,6 +428,10 @@ article {
     .sub_title {
         font-size: 1.25em;
     }
+
+    .left_col .sub_title {
+        margin-left: 0;
+    }
     
     .info {
         font-size: 1.2em;
@@ -504,7 +511,7 @@ article {
     }
     
     .mobile {
-        display: inline-block;
+        display: block;
     }
     
     .left_col {
@@ -679,10 +686,6 @@ article {
     
     .home .title {
         font-size: 2em;
-    }
-    
-    .home .sub_title {
-        font-size: 1em;
     }
     
     .date {

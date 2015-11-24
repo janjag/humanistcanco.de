@@ -5,7 +5,6 @@ var sections = $('section'),
 
 
 function scroller() {
-    event.preventDefault();
     var cur_pos = $(this).scrollTop();
 
     sections.each(function () {

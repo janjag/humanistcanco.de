@@ -217,8 +217,7 @@ footer {
 /* Content area */
 
 .content {
-    background: #F1F1FE url(../static/img/bacground1080p.jpg) center center no-repeat;
-    background-size: cover;
+    background: #F1F1FE;
     height: 100%;
     padding-left: 15.625em;
     position: relative;
@@ -266,7 +265,8 @@ article {
 /* Home section */
 
 .home {
-    background: rgba(241, 241, 254, 0.5);
+    background: #F1F1FE url(../static/img/bacground1080p.jpg) center center no-repeat;
+    background-size: cover;
     height: 100%;
     position: relative;
 }
@@ -525,7 +525,7 @@ article {
     
     .home {
         height: auto;
-        min-height: inherit;
+        min-height: 18em;
     }
     
     .sub_title {
@@ -551,9 +551,13 @@ article {
     }
     
     .h1_wrapper {
-        height: 10em;
+        height: 6.5em;
         padding-left: 1em;
-        padding-top: 3em;
+        padding-top: 2em;
+    }
+    
+    .home .h1_wrapper {
+        padding-top: 1.25em;
     }
     
     h1 {
@@ -565,6 +569,7 @@ article {
     }
     
     .info {
+        margin-top: 1em;
         font-size: 1em;
     }
     
@@ -609,15 +614,6 @@ article {
     
     article {
         padding: 0.5em;
-    }
-    
-    .h1_wrapper {
-        height: 8em;
-        padding-top: 2em;
-    }
-    
-    .home .h1_wrapper {
-        padding-top: 1.25em;
     }
     
     .info {
@@ -678,13 +674,21 @@ article {
 /* width <480px/16px=30em */
 
 @media screen and (max-width: 30em) {
-    .h1_wrapper {
-        height: 6em;
-    }
     
     .home .h1_wrapper q {
         display: none;
     }
+    
+    .h1_wrapper {
+        height: 3.5em;
+        padding-left: 1em;
+        padding-top: 0.5em;
+    }
+    
+    .home .h1_wrapper {
+        padding-top: 0.125em;
+    }
+    
     
     .home .title {
         font-size: 2em;

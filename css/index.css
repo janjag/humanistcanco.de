@@ -50,6 +50,7 @@ h2 {
 }
 
 .wrapper {
+    background: #F1F1FE;
     height: 100%;
     margin: 0 auto;
     width: 120.125em;
@@ -216,7 +217,7 @@ footer {
 /* Content area */
 
 .content {
-    background: url(../static/img/bacground1080p.jpg) center center no-repeat;
+    background: #F1F1FE url(../static/img/bacground1080p.jpg) center center no-repeat;
     background-size: cover;
     height: 100%;
     padding-left: 15.625em;

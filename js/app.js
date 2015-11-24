@@ -1,28 +1,30 @@
 'use strict'
 
-var sections = $('section')
-  , nav = $('#nav');
+var sections = $('section'),
+    nav = $('#nav');
 
 
 function scroller() {
-  var cur_pos = $(this).scrollTop();
-  
-  sections.each(function() {
-    var top = $(this).offset().top - (0.25*innerHeight),
-        bottom = top + $(this).outerHeight();
+    event.preventDefault();
+    var cur_pos = $(this).scrollTop();
+
+    sections.each(function () {
+        var top = $(this).offset().top - (0.25 * innerHeight),
+            bottom = top + $(this).outerHeight();
+
+        if (cur_pos >= top && cur_pos <= bottom) {
+            nav.find('li a').removeClass('active');
+            
+            nav.find('li a[href="#' + $(this).attr('id') + '"]').addClass('active');
+            if (nav.find('li a[href="#home"]').hasClass('active')) {
+                $('#left_col').find('q').hide(700, 'swing');
+            } else {
+                $('#left_col').find('q').show(700, 'swing');
+            }
+        }
+        
+    });
     
-    if (cur_pos >= top && cur_pos <= bottom) {
-      nav.find('li a').removeClass('active');
-      
-      nav.find('li a[href="#'+$(this).attr('id')+'"]').addClass('active');
-        if(nav.find('li a[href="#home"]').hasClass('active')) {
-            $('#left_col').find('q').hide(700, 'swing');
-        }
-        else {
-            $('#left_col').find('q').show(700, 'swing');
-        }
-    }
-  });
 }
 
 $(window).on('scroll', scroller);
@@ -32,18 +34,14 @@ $(window).on('touchmove', scroller);
 
 
 $('#left_col').find('a').on('click', function () {
-  var $el = $(this)
-    , id = $el.attr('href');
-  
-  $('html, body').animate({
-    scrollTop: $(id).offset().top
-  }, 1000);
+    event.preventDefault();
+    var $el = $(this),
+        id = $el.attr('href');
+        
+    $('html, body').animate({
+        scrollTop: $(id).offset().top
+    }, 1000, function () {
+        window.location.hash = id;
+    });
 });
 
-(function age () {
-var now = new Date(),
-    year_now = now.getFullYear(),
-    diff = year_now - 1987;
-document.getElementById("age").innerHTML = diff;
-document.getElementById("year").innerHTML = year_now;
-})();

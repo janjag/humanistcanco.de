@@ -527,6 +527,10 @@ article {
         min-height: inherit;
     }
     
+    .sub_title {
+        padding-left: 0.15em;
+    }
+    
     .home .h1_wrapper q {
         font-size: 0.75em;
     }
@@ -545,11 +549,8 @@ article {
         width: 100%;
     }
     
-    header, .h1_wrapper {
-        height: 10em;
-    }
-    
     .h1_wrapper {
+        height: 10em;
         padding-left: 1em;
         padding-top: 3em;
     }
@@ -686,6 +687,11 @@ article {
     
     .home .title {
         font-size: 2em;
+        margin-bottom: -0.45em;
+    }
+    
+    .sub_title {
+        padding-left: 0.1em;
     }
     
     .date {

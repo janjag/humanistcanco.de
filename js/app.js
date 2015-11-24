@@ -5,11 +5,19 @@ var sections = $('section'),
 
 
 function scroller() {
-    var cur_pos = $(this).scrollTop();
+    var cur_pos = $(this).scrollTop(),
+        currentHash = "#home";
 
     sections.each(function () {
         var top = $(this).offset().top - (0.25 * innerHeight),
-            bottom = top + $(this).outerHeight();
+            bottom = top + $(this).outerHeight(),
+            distance = window.pageYOffset - $(this).offset().top,
+            hash = '#' + $(this).attr('id');
+        
+        if (distance < 30 && distance > -30) {
+            window.location.hash = hash;
+            currentHash = hash;
+        } 
 
         if (cur_pos >= top && cur_pos <= bottom) {
             nav.find('li a').removeClass('active');
@@ -43,4 +51,5 @@ $('#left_col').find('a').on('click', function () {
         window.location.hash = id;
     });
 });
+
 

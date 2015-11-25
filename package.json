@@ -1,0 +1,30 @@
+{
+  "name": "humanistcanco.de",
+  "version": "0.2.0",
+  "description": "0.2.0",
+  "main": "static.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janjag/humanistcanco.de.git"
+  },
+  "keywords": [
+    "portfolio",
+    "first page",
+    "onepage"
+  ],
+  "author": "Jan Jagiela",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/janjag/humanistcanco.de/issues"
+  },
+  "homepage": "https://github.com/janjag/humanistcanco.de#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^1.1.0",
+    "node-sass": "^3.4.2"
+  }
+}

@@ -1,0 +1,57 @@
+/* text colors */
+
+$color-1: #294F6D; /* dark blue  */
+$color-2: #F1F1FE; /* light grey */
+$color-3: #0B83E0; /* light blue */
+
+
+/* bg colors */
+
+$bg-color-1: #1C649B; /* mid blue*/
+$bg-color-2: #F1F1FE; /* light grey */
+$bg-color-3: #0B83E0; /* light blue */
+
+
+/* fonts */
+
+$font-1: 'latolight', sans-serif;
+$font-2: 'latomedium', sans-serif;
+
+/* breakpoints */
+
+$phone-width: 70em; /* 1120px */
+$phone-width: 50em; /* 800px */
+$phone-width: 30em; /* 480px */
+
+/* mixin */
+
+/* transition mixin */
+@mixin transition($args...) {
+    -webkit-transition: $args;
+       -moz-transition: $args;
+         -o-transition: $args;
+            transition: $args;
+}
+
+
+
+/* <1120 mixin */
+@mixin medium-screen {
+  @media (max-width: #{$medium-screen-width - 1px}) {
+    @content;
+  }
+}
+
+/* <800 mixin */
+@mixin tablet {
+  @media (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+/* <479 mixin */
+@mixin phone {
+  @media (max-width: #{$phone-width - 1px}) {
+    @content;
+  }
+}

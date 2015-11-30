@@ -1,0 +1,39 @@
+/* Unsorted list global config */
+
+ul {
+    border-left: 0.1em solid $darkblue;
+    list-style: none;
+    margin: 0.5em 0;
+    padding: 0.1em 0 0.1em 0.5em;
+    
+    li {
+        display: inline-block;
+        font-size: 1.2em;
+        margin-bottom: 0.75em;
+        width: 100%;
+        
+        strong, a, i {
+            display: block;
+            padding-bottom: 0.2em;
+        }
+        
+        i {
+            border: 0.1em solid $darkblue;
+            float: left;
+            font-size: 2em;
+            margin-right: 0.3em;
+            padding: 0.2em;
+            text-align: center;
+            width: 1.75em;
+        }
+        
+    }
+}
+
+.dual_col li {
+    width: 49%;
+}
+
+.multi_col li {
+    width: 33%;
+}

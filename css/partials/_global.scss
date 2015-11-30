@@ -1,0 +1,98 @@
+/* Reset */
+
+a, article, body, div, footer, h1, h2, header, i, img, li, p, q, section, span, strong, ul {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global */
+html {
+    background-color: $lightgrey;
+    color: $darkblue;
+    font: 100% $font-1;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    position: relative;
+}
+
+a {
+    color: $darkblue;
+    display: inline-block;
+    text-decoration: none;
+    
+    &:hover,
+    &:visited{
+        color: inherit;
+    }
+}
+
+strong {
+    font-family: $font-2;
+}
+
+h1 {
+    font-size: 4em;
+    letter-spacing: -0.05em;
+}
+
+h2 {
+    border-left: 0.1em solid $darkblue;
+    font-size: 2.5em;
+    letter-spacing: -0.04em;
+    margin: 0.5em 0;
+    padding-left: 0.2em;
+}
+/*
+.wrapper {
+    height: 100%;
+    margin: 0 auto;
+    width: 120.125em;
+}
+*/
+.title {
+    display: block;
+    font-size: 6em;
+    letter-spacing: -0.05em;
+    margin-bottom: -0.35em;
+    
+    strong {
+        font-weight: normal;
+    }
+}
+
+.sub_title {
+    display: block;
+    font-size: 1.5em;
+    letter-spacing: -0.1em;
+    padding-left: 0.2em;
+}
+
+.h1_wrapper {
+    background-color: $lightblue;
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.22);
+    color: $lightgrey;
+    height: 10em; 
+    padding: 3.375em 2em 1em 2em;
+    width: 100%;
+}
+
+.clear {
+    border-bottom: 0.15em solid $darkblue;
+    clear: both;
+    margin-bottom: 2em;
+}
+
+.blank {
+    border: none;
+    margin: 0;
+    width: 1em;
+}
+
+.mobile {
+    display: none;
+}

@@ -1,136 +1,110 @@
 /* Content area */
 
-.content {
-    background-color: $lightgrey;
-    height: 100%;
-    padding-left: 15.625em;
+.h2_wrapper {
+    height: 6em;
+    margin: 5em auto 0.5em;
     position: relative;
-    width: 100%;
-
-    .section {
-        display: block;
-        min-height: 100%;
-        width: 100%;
-    }
-
-    .article {
-        min-height: 100%;
-        padding: 2em;
-        padding-top: 1em;
-        text-align: left;
-        width: 100%;
-    }
+    text-align: left;
+    width: 75%;
 }
 
 /* Home section */
 
 .home {
-    background: $lightgrey url(../static/img/bacground1080p.jpg) center center no-repeat;
-    background-size: cover;
-    height: 100%;
-    position: relative;
+    border: none;
+    height: 41em;
     
-    .h1_wrapper {
-        height: 10em;
-        padding-top: 3.25em;
+    &::before {
+        background: url(../../static/img/bacground1080p.jpg) bottom center no-repeat;
+        background-size: cover;
+        content: "";
+        display: block;
+        height: 17em;
+    }
+    
+    .h2_wrapper {
+        height: 9em;
+        margin-top: 3em;
+        
+        .sub_title {
+            margin-bottom: 1em;
+            margin-top: -1em;
+            text-indent: -0.1em;
+        }
         
         q {
-            font-size: 1.2em;
+            font-size: 1.75em;
             font-style: italic;
-            letter-spacing: -0.05em;
-            position: absolute;
-            right: 0.5em;
-            top: 0.125em;
-            width: 16.25em;
         }
     }
     
-    .title {
-        font-size: 4em;
-        margin-bottom: -0.35em;
-    }
-    
-    .info {
-        font-size: 1.5em;
-        margin-top: 3em;
-        width: 18em;
+    .article {
+        .info {
+            margin: 2em 0;
+            width: 18em;
+            
+            li {
+                font-size: 1.25em;
+            }
+        }
     }
 }
 
-/* About me section */
+/* About Me section */
 
-.col {
-    display: block;
-    float: left;
-    font-size: 1.2em;
-    line-height: 1.5em;
-    padding-right: 2em;
-    text-align: justify;
-    width: 34%;
-    
-    p {
-        margin-bottom: 1.5em;
+.about_me {
+    .article{
         
-        span:first-child {
-            border-left: 0.15em solid $darkblue;
-            padding-left: 0.2em;
+        .col {
+            display: inline-block;
+            font-size: 1.25em;
+            line-height: 1.5em;
+            padding: 1em;
+            padding-right: 0;
+            text-align: justify;
+            width: 49.5%;
+            vertical-align: top;
+            
+            p{
+                padding-bottom: 1.5em;
+                
+                span {
+                    border-left: 0.15em solid $darkblue;
+                    padding: 0 0 0 0.2em;
+                }
+            }
+        }
+        
+        .odd {
+            padding-left: 0;
+            padding-right: 1em;
+        }
+        
+        .ujk_logo {
+            background: #fff url(../static/img/logo.png) top left no-repeat;
+            border-left: 0.3em solid $darkblue;
+            display: inline-block;
+            height: 4.1625em;
+            margin: 1em 0;
+            text-indent: -9999em;
+            width: 6.5em;
+        }
+        
+        .date {
+            border-left: 0.1em solid $darkblue;
+            float: right;
+            font-size: 1.4em;
+            margin-top: 2em;
+            padding: 0 0.3em;
+            text-align: right;
         }
     }
 }
 
-.photo {
-    background: url(../static/img/me.jpg) top center no-repeat;
-    background-size: contain;
-    float: right;
-    height: 32em;
-    right: 2em;
-    text-indent: -9999em;
-    width: 31%;
-}
+/* Footer section */
 
-.ujk_logo {
-    background: $lightgrey url(../static/img/logo.png) top left no-repeat;
-    border-left: 0.3em solid $darkblue;
-    display: inline-block;
-    height: 4.1625em;
-    margin: 1em 0;
-    text-indent: -9999em;
-    width: 6.5em;
-}
-
-.date {
-    border-left: 0.1em solid $darkblue;
-    float: right;
-    font-size: 1.4em;
-    margin-top: 2em;
-    padding: 0 0.3em;
-    text-align: right;
-}
-
-.edu_ul li span {
-    font-style: italic;
-}
-
-/* Skills */
-
-.skills {
-    min-height: inherit;
-}
-
-/* Projects */
-
-.project_photo {
-    float: left;
-    margin-right: 1.5em;
-    width: 40%;
-}
-
-.project_photo img {
-    height: auto;
-    width: 100%;
-}
-
-.project_info {
-    float: left;
-    width: 55%;
+.footer {
+    font-size: 1.25em;
+    margin: 2em auto 3em;
+    width: 75%;
 }

@@ -6,7 +6,8 @@ module.exports = function(grunt) {
                 bsFiles: {
                     src : [
                         'css/*.css',
-                        '*.html'
+                        '*.html',
+                        'js/*.js'
                     ]
                 },
                 options: {
@@ -20,7 +21,7 @@ module.exports = function(grunt) {
                 map: true,
                 processors: [
                     require('autoprefixer')({
-                        browsers: ['last 2 versions']
+                        browsers: ['last 4 versions','> 5%']
                     })
                 ]
             },

@@ -1,0 +1,48 @@
+html {
+    background-color: $white;
+    color: $darkblue;
+    font: 100% $font;
+    font-weight: 300;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    position: relative;
+}
+
+.header {
+    background-color: $lightblue;
+    color: $lightgrey;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 22em;
+}
+
+.wrapper {
+    background-color: $lightgrey;
+    height: 100%;
+    width: 100%;
+    padding-left: 22em;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.section {
+    background-color: $white;
+    border-top: 0.25em solid $lightgrey;
+    display: block;
+    width: 100%;
+}
+
+.article {
+    margin: 1.5em auto;
+    text-align: left;
+    width: 75%;
+}

@@ -11,77 +11,114 @@
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" href="static/img/favicon.ico" type="image/x-icon">
         
-        <link rel="stylesheet" href="css/fonts.css" />
-        <link rel="stylesheet" href="css/font-awesome.css" />
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/hcc-icons.css" />
         <link rel="stylesheet" href="css/main.css" />
-        <script src="js/jquery-2.1.4.min.js"></script>
     </head>
-    
+        
     <body>
-        <div id="wrapper" class="wrapper">
-            <div id="left_col" class="left_col">
-            <header>
-                <p class="title"><strong>hcc</strong></p>
-                <p class="sub_title">humanistcanco.de</p>
-            </header>
-            <div>
+       
+<!-- Header -->
+        
+        <header class="header">
+            <div class="avatar">
+                <div class="photo">
+                    My photo
+                </div>
+                <h1 class="title">humanistcanco.de</h1>
+                <p class="sub_title">by Jan Jagiela</p>
                 <q>
-                I have no idols. I admire work, dedication and competence.
-                <strong>-&nbsp;Ayrton&nbsp;Senna</strong>
+                   I have no idols. I admire work, dedication and competence.
+                   <strong>-&nbsp;Ayrton&nbsp;Senna</strong>
                 </q>
             </div>
             
             <ul id="nav" class="nav">
-                <li><a href="#home" class="active"><i class="fa fa-home"></i><span>Home</span></a></li>
-                <li><a href="#about"><i class="fa fa-user"></i><span>About Me</span></a></li>
-                <li><a href="#skills"><i class="fa fa-align-left fa-rotate-270"></i><span>Skills</span></a></li>
-                <!-- <li><a href="#projects"><i class="fa fa-code"></i><span>Projects</span></a></li> -->
-                <li><a href="#contact"><i class="fa fa-envelope-o"></i><span>Contact</span></a></li>
+                <li><a href="#home" class="active"><i class="hcc-home"></i><span>Home</span></a></li>
+                <li><a href="#about"><i class="hcc-user"></i><span>About Me</span></a></li>
+                <li><a href="#skills"><i class="hcc-align-left hcc-rotate-270"></i><span>Skills</span></a></li>
+                <!--<li><a href="#projects"><i class="hcc-code"></i><span>Projects</span></a></li>-->
+                <li><a href="#contact"><i class="hcc-envelope-o"></i><span>Contact</span></a></li>
             </ul>
                 
-            <footer>    
-                <p>Copyright <i class="fa fa-copyright"></i>2015</p>
-            </footer>
+            <div class="icons">
+                <ul class="icon_list">
+                   <li>
+                       <a href="mailto:janjag@humanistcanco.de"><i class="hcc-envelope-o"></i></a>
+                   </li>
+                   <li>
+                       <a href="mailto:janjag87@gmail.com"><i class="hcc-comments-o"></i></a>
+                   </li>
+                   <li>
+                       <a href="skype:live:jan.jagiela.1987?add"><i class="hcc-skype"></i></a>
+                   </li>
+                   <li>
+                       <a href="tel:+48606977068"><i class="hcc-mobile"></i></a>
+                   </li>
+                   <li>
+                       <a href="http://pl.linkedin.com/in/janjag" target="_blank"><i class="hcc-linkedin"></i></a>
+                   </li>
+                   <li>
+                       <a href="http://twitter.com/JanJagiea" target="_blank"><i class="hcc-twitter"></i></a>
+                   </li>
+                   <li>
+                       <a href="http://facebook.com/janjag87" target="_blank"><i class="hcc-facebook"></i></a>
+                   </li>
+                   <li>
+                       <a href="http://github.com/janjag" target="_blank"><i class="hcc-github-alt"></i></a>
+                   </li>
+                </ul>
             </div>
+        </header>
+        
+<!-- Wrapper -->
+       
+        <div id="wrapper" class="wrapper">
+
+<!-- Content -->           
 
             <div id="content" class="content">
+               
+<!-- Home section -->
+               
                 <section id="home" class="home section">
-                   <div class="h1_wrapper">
-                       <p class="title mobile"><strong>humanistcanco.de</strong></p>
-                       <p class="title desktop"><strong>Humanist can code</strong></p>
+                   <div class="h2_wrapper">
+                       <h2 class="title mobile">humanistcanco.de</h2>
+                       <h2 class="title desktop h_first">Humanist can code</h2>
                        <p class="sub_title">by Jan Jagiela</p>
                        <q>
-                            I have no idols. I admire work, dedication and competence.
-                            <strong>-&nbsp;Ayrton&nbsp;Senna</strong>
-                        </q>
+                           I have no idols. I admire work, dedication and competence.
+                           <strong>-&nbsp;Ayrton&nbsp;Senna</strong>
+                       </q>
                    </div>
-                    <article class="article">
-                        <ul class="info">
-                            <li>
-                                <i class="fa fa-envelope-o"></i><a href="mailto:janjag@humanistcanco.de">janjag @humanistcanco.de</a>
-                            </li>
-                            <li>
-                                <i class="fa fa-mobile"></i>
-                                <a href="#">+48 606 977 068</a>
-                            </li>
-                            <li>
-                                <i class="fa fa-home"></i>
-                                <a href="https://goo.gl/maps/LyUecEX5i5C2" target="_blank">Starachowice, Poland</a>
-                            </li>
-                        </ul>
-                    </article>
+                   <article class="article">
+                       <ul class="info">
+                           <li>
+                               <i class="hcc-envelope-o"></i><a href="mailto:janjag@humanistcanco.de">janjag @humanistcanco.de</a>
+                           </li>
+                           <li>
+                               <i class="hcc-mobile"></i>
+                               <a href="tel:+48606977068">+48 606 977 068</a>
+                           </li>
+                           <li>
+                               <i class="hcc-home"></i>
+                               <a href="https://goo.gl/maps/LyUecEX5i5C2" target="_blank">Starachowice, Poland</a>
+                           </li>
+                       </ul>
+                   </article>
                 </section>
-                <section id="about" class="section">
-                   <div class="h1_wrapper">
-                       <h1 class="mobile">About Me</h1>
-                       <h1 class="desktop">A few words about me</h1>
+                               
+<!-- About Me section -->
+               
+                <section id="about" class="about_me section">
+                   <div class="h2_wrapper">
+                       <h2 class="mobile">About Me</h2>
+                       <h2 class="desktop">A few words about me</h2>
                    </div>
 
                    <article class="article">
-                       <div class="photo">
-                           My photo
-                       </div>
-                       <div class="col">
+                       
+                       <div class="col odd">
                        <p><span>H</span>ello, my name is Jan Jagiela, but call me Johnny. I live in Starachowice – small city near Kielce in Poland. By heart I'm a humanist, but recently I got interested in programming. It has been front-end which caught my eye. So I decided to prove that Humanists Can Code.
                        </p>
                        <p>I like to know things, and how they work. I always ask questions to expand my knowledge. It's always a good idea to leverage on someone else's experience. 
@@ -94,153 +131,162 @@
                        </p>
                        </div>
                        <div class="clear"></div>
-                       <h2>Education</h2>
+                       <h3>Education</h3>
                         
                            <div class="ujk_logo">UJK logo</div>
                            <div class="date">10.2012 – 07.2014</div>
                                <ul class="edu_ul">
-                                   <li><i class="fa fa-angle-right"></i>Jan Kochanowski University</li>
-                                   <li><a href="http://ujk.edu.pl" target="_blank"><i class="fa fa-external-link-square"></i>ujk.edu.pl</a></li>
-                                   <li><i class="fa fa-map-marker"></i>Kielce, Poland</li>
-                                   <li><i class="fa fa-university"></i>Faculty of Humanities</li>
-                                   <li><i class="fa fa-angle-right"></i><strong>Scientific information and library science</strong></li>
-                                   <li><i class="fa fa-angle-right"></i>Specialization: <span>Press studies with elements of journalism</span></li>
-                                   <li><i class="fa fa-angle-right"></i>Master's degree</li>
+                                   <li><i class="hcc-angle-right"></i>Jan Kochanowski University</li>
+                                   <li><a href="http://ujk.edu.pl" target="_blank"><i class="hcc-external-link-square"></i>ujk.edu.pl</a></li>
+                                   <li><i class="hcc-map-marker"></i>Kielce, Poland</li>
+                                   <li><i class="hcc-university"></i>Faculty of Humanities</li>
+                                   <li><i class="hcc-angle-right"></i><strong>Scientific information and library science</strong></li>
+                                   <li><i class="hcc-angle-right"></i>Specialization: <span>Press studies with elements of journalism</span></li>
+                                   <li><i class="hcc-angle-right"></i>Master's degree</li>
                                </ul>
                            <div class="clear"></div>
 
                            <div class="ujk_logo">UJK logo</div>
                            <div class="date">10.2009 – 07.2012</div>
                                <ul class="edu_ul">
-                                   <li><i class="fa fa-angle-right"></i>Jan Kochanowski University</li>
-                                   <li><a href="http://ujk.edu.pl" target="_blank"><i class="fa fa-external-link-square"></i>ujk.edu.pl</a></li>
-                                   <li><i class="fa fa-map-marker"></i>Kielce, Poland</li>
-                                   <li><i class="fa fa-university"></i>Faculty of Humanities</li>
-                                   <li><i class="fa fa-angle-right"></i><strong>Scientific information and library science</strong></li>
-                                   <li><i class="fa fa-angle-right"></i>Specialization: <span>Information management</span></li>
-                                   <li><i class="fa fa-angle-right"></i>Bachelor's degree</li>
+                                   <li><i class="hcc-angle-right"></i>Jan Kochanowski University</li>
+                                   <li><a href="http://ujk.edu.pl" target="_blank"><i class="hcc-external-link-square"></i>ujk.edu.pl</a></li>
+                                   <li><i class="hcc-map-marker"></i>Kielce, Poland</li>
+                                   <li><i class="hcc-university"></i>Faculty of Humanities</li>
+                                   <li><i class="hcc-angle-right"></i><strong>Scientific information and library science</strong></li>
+                                   <li><i class="hcc-angle-right"></i>Specialization: <span>Information management</span></li>
+                                   <li><i class="hcc-angle-right"></i>Bachelor's degree</li>
                                </ul>
                            <div class="clear"></div>
 
-                        <h2>Hobbies / Interests</h2>
+                        <h3>Hobbies / Interests</h3>
                            <ul class="multi_col">
-                               <li><i class="fa fa-angle-right"></i>New technologies</li>
-                               <li><i class="fa fa-angle-right"></i>Computers and accessories</li>
-                               <li><i class="fa fa-angle-right"></i>Archery</li>
-                               <li><i class="fa fa-angle-right"></i>Formula 1</li>
-                               <li><i class="fa fa-angle-right"></i>Video games &amp; E-sport</li>
-                               <li><i class="fa fa-angle-right"></i>Photography</li>
-                               <li><i class="fa fa-angle-right"></i>and more...</li>
+                               <li><i class="hcc-angle-right"></i>New technologies</li>
+                               <li><i class="hcc-angle-right"></i>Computers and accessories</li>
+                               <li><i class="hcc-angle-right"></i>Archery</li>
+                               <li><i class="hcc-angle-right"></i>Formula 1</li>
+                               <li><i class="hcc-angle-right"></i>Video games &amp; E-sport</li>
+                               <li><i class="hcc-angle-right"></i>Photography</li>
+                               <li><i class="hcc-angle-right"></i>and more...</li>
                            </ul>
                         <div class="clear"></div> 
                    </article>
                 </section>
-
+               
+<!-- Skills section -->
                     
                 <section id="skills" class="skills section">
-                   <div class="h1_wrapper">
-                       <h1 class="mobile">Skills</h1>
-                       <h1 class="desktop">What I know</h1>
+                   <div class="h2_wrapper">
+                       <h2 class="mobile">Skills</h2>
+                       <h2 class="desktop">What I know</h2>
                    </div>
 
                    <article class="article">
-                        <h2>Skills</h2>
+                        <h3>Skills</h3>
                             <ul class="multi_col">
-                                <li><i class="fa fa-angle-right"></i><strong>HTML5</strong></li>
-                                <li><i class="fa fa-angle-right"></i><strong>CSS3</strong></li>
-                                <li><i class="fa fa-angle-right"></i>RWD</li>
-                                <li><i class="fa fa-angle-right"></i>Bootstrap</li>
-                                <li><i class="fa fa-angle-right"></i><strong>Javascript</strong></li>
-                                <li><i class="fa fa-angle-right"></i>jQuery</li>
-                                <li><i class="fa fa-angle-right"></i>node.js</li>
-                                <li><i class="fa fa-angle-right"></i><strong>Git</strong></li>
+                                <li><i class="hcc-angle-right"></i><strong>HTML5</strong></li>
+                                <li><i class="hcc-angle-right"></i><strong>CSS3</strong></li>
+                                <li><i class="hcc-angle-right"></i>Sass</li>
+                                <li><i class="hcc-angle-right"></i>RWD</li>
+                                <li><i class="hcc-angle-right"></i>Bootstrap</li>
+                                <li><i class="hcc-angle-right"></i><strong>Javascript</strong></li>
+                                <li><i class="hcc-angle-right"></i>jQuery</li>
+                                <li><i class="hcc-angle-right"></i>AngularJS</li>
+                                <li><i class="hcc-angle-right"></i>Grunt</li>
+                                <li><i class="hcc-angle-right"></i>node.js</li>
+                                <li><i class="hcc-angle-right"></i><strong>Git</strong></li>
                             </ul>
                         <div class="clear"></div>
-                        <h2>Working environment &amp; tools</h2>
+                        <h3>Working environment &amp; tools</h3>
                         <ul class="multi_col">
-                            <li><i class="fa fa-angle-right"></i>Windows 10</li>
-                            <li><i class="fa fa-angle-right"></i>Github for Windows</li>
-                            <li><i class="fa fa-angle-right"></i>Brackets</li>
-                            <li><i class="fa fa-angle-right"></i>Gimp / Photoshop CS2</li>
-                            <li><i class="fa fa-angle-right"></i>Inkscape</li>    
+                            <li><i class="hcc-angle-right"></i>Windows 10</li>
+                            <li><i class="hcc-angle-right"></i>Git for Windows</li>
+                            <li><i class="hcc-angle-right"></i>Brackets</li>
+                            <li><i class="hcc-angle-right"></i>Gimp / Photoshop CS2</li>
+                            <li><i class="hcc-angle-right"></i>Inkscape</li>    
                         </ul>
                         <div class="clear"></div>
                    </article>
                 </section>
+        
+<!-- Projects section -->
+                    
                 <!-- To be added soon
                 <section id="projects" class="section">
-                   <div class="h1_wrapper">
-                       <h1 class="mobile">Projects</h1>
-                       <h1 class="desktop">What I build</h1>
+                   <div class="h2_wrapper">
+                       <h2 class="mobile">Projects</h2>
+                       <h2 class="desktop">What I build</h2>
                    </div>
 
                    <article class="article">
-                       <h2>humanistcanco.de</h2>
+                       <h3>humanistcanco.de</h3>
                        <div class="project_photo">
                            <img src="static/img/projects/humanistcancode.jpg" alt="hcc screenshot">
                        </div>
                        <ul class="project_info">
-                           <li><a href="https://github.com/janjag/humanistcanco.de" target="_blank"><i class="fa fa-external-link-square"></i>Github repository</a></li>
-                           <li><i class="fa fa-angle-right"></i>My home/portfolio page</li>
-                           <li><i class="fa fa-angle-right"></i>HTML5+CSS3+RWD and a little bit of jQuery</li>
+                           <li><a href="https://github.com/janjag/humanistcanco.de" target="_blank"><i class="hcc-external-link-square"></i>Github repository</a></li>
+                           <li><i class="hcc-angle-right"></i>My home/portfolio page</li>
+                           <li><i class="hcc-angle-right"></i>HTML5+CSS3+RWD and a little bit of jQuery</li>
                        </ul>
                        <div class="clear"></div>
                    </article>
                 </section>
                 -->
 
+<!-- Contact section -->
+                    
                 <section id="contact" class="section">
-                   <div class="h1_wrapper">
-                       <h1 class="mobile">Contact</h1>
-                       <h1 class="desktop">How to contact me</h1>
+                   <div class="h2_wrapper">
+                       <h2 class="mobile">Contact</h2>
+                       <h2 class="desktop h_first">How to contact me</h2>
                    </div>
 
                    <article class="article">
-                       <h2>Directly</h2>
+                       <h3>Directly</h3>
                        <ul class="dual_col">
                             <li>
-                                <i class="fa fa-envelope-o fa-2x"></i>
+                                <i class="hcc-envelope-o hcc-2x"></i>
                                 <strong>e-mail</strong>
                                 <a href="mailto:janjag@humanistcanco.de">janjag @humanistcanco.de</a>
                             </li>
                             <li>
-                                <i class="fa fa-comments-o fa-2x"></i>
+                                <i class="hcc-comments-o hcc-2x"></i>
                                 <strong>gmail chat</strong>
                                 <a href="mailto:janjag87@gmail.com">janjag87 @gmail.com</a>
                             </li>
                             <li>
-                                <i class="fa fa-skype fa-2x"></i>
+                                <i class="hcc-skype hcc-2x"></i>
                                 <strong>skype</strong>
                                 <a href="skype:live:jan.jagiela.1987?add">jan.jagiela.1987 @skype</a>
                             </li>
                             <li>
-                                <i class="fa fa-mobile fa-2x"></i>
+                                <i class="hcc-mobile hcc-2x"></i>
                                 <strong>phone</strong>
-                                <a href="#">+48 606 977 068</a>
+                                <a href="tel:+48606977068">+48 606 977 068</a>
                             </li>
                        </ul>
                        <div class="clear"></div>
 
-                       <h2>Through social media </h2>
+                       <h3>Through social media </h3>
                        <ul class="dual_col">
                             <li>
-                               <i class="fa fa-linkedin fa-2x"></i>
-                               <strong>LinkedIn</strong>
+                               <i class="hcc-linkedin hcc-2x"></i>
+                               <strong>Linkedin</strong>
                                <a href="http://pl.linkedin.com/in/janjag" target="_blank">pl.linkedin.com/in/janjag</a>
                             </li>
                             <li>
-                                <i class="fa fa-twitter fa-2x"></i>
+                                <i class="hcc-twitter hcc-2x"></i>
                                 <strong>Twitter</strong>
                                 <a href="http://twitter.com/JanJagiea" target="_blank">http://twitter.com/JanJagiea</a>
                             </li>
                             <li>
-                                <i class="fa fa-facebook fa-2x"></i>
+                                <i class="hcc-facebook hcc-2x"></i>
                                 <strong>facebook</strong>
                                 <a href="http://facebook.com/janjag87" target="_blank">http://facebook.com/janjag87</a>
                             </li>
                             <li>
-                                <i class="fa fa-github-alt fa-2x"></i>
-                                <strong>github</strong>
+                                <i class="hcc-github-alt hcc-2x"></i>
+                                <strong>Github</strong>
                                 <a href="http://github.com/janjag" target="_blank">http://github.com/janjag</a>
                             </li>
                        </ul>
@@ -249,10 +295,23 @@
                    </article>
                 </section>
 
+<!-- Footer -->       
+       
+                <section id="contact" class="section">
+                   
+                   <footer class="footer">
+                       <p>Copyright <i class="hcc-copyright"></i>2015 humanistcnaco.de</p>
+                   </footer>
+            
+                </section>
+                
             </div>
         </div>
+
         
-    
+<!-- JS -->
+                           
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/app.js"></script>
     </body>
 </html>

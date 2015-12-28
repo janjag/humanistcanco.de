@@ -4,6 +4,8 @@
 /* import sass partials*/
 
 /* Grid */
+@import "_grid";
+    
 /* import global styles */
 @import "_global";
 
@@ -11,7 +13,7 @@
 @import "_list";
 
 /* import leftcol styles */
-@import "_leftcol";
+@import "_header";
 
 /* import content styles */
 @import "_content";

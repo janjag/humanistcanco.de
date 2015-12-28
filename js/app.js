@@ -8,7 +8,7 @@ function scroller() {
     var cur_pos = $(this).scrollTop();
 
     sections.each(function () {
-        var top = $(this).offset().top - (0.25 * innerHeight),
+        var top = $(this).offset().top - (0.5 * innerHeight),
             bottom = top + $(this).outerHeight();
 
         if (cur_pos >= top && cur_pos <= bottom) {
@@ -19,9 +19,9 @@ function scroller() {
             
             nav.find('li a[href="#' + $(this).attr('id') + '"]').addClass('active');
             if (nav.find('li a[href="#home"]').hasClass('active')) {
-                $('#left_col').find('q').hide(700, 'swing');
+                $('header').find('q').hide(400, 'swing');
             } else {
-                $('#left_col').find('q').show(700, 'swing');
+                $('header').find('q').show(400, 'swing');
             }
         }
         
@@ -35,7 +35,7 @@ $(window).on('scroll', scroller);
 $(window).on('touchmove', scroller);
 
 
-$('#left_col').find('a').on('click', function () {
+$('header').find('a').on('click', function () {
     event.preventDefault();
     var $el = $(this),
         id = $el.attr('href');

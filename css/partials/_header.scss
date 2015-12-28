@@ -1,0 +1,70 @@
+/* Header */
+
+.header {
+    
+    .avatar {
+        height: 18em;
+        margin-top: 2em;
+        text-align: center;
+        width: 100%;
+        
+        .photo {
+            background: url("../../static/img/me.jpg") center center no-repeat;
+            background-size: cover;
+            border: 0.125em solid $white;
+            border-radius: 50%;
+            height: 12.5em;
+            margin: 0 auto;
+            text-indent: -9999em;
+            width: 12.5em;
+        }
+        
+        .sub_title {
+            margin-top: -0.75em;
+            text-align: left;
+            text-indent: 2.025em;
+        }
+        
+        q {
+            font-style: italic;
+            font-weight: 400;
+            letter-spacing: -0.0625em;
+            margin-top: -0.125em;
+            padding: 0.25em 1.25em;
+        }
+    }
+    
+    .nav {
+        border: none;
+        padding-left: 1em;
+        margin-top: 1em;
+        
+        li {
+            font-size: 1.375em;
+            font-weight: 400;
+            letter-spacing: -0.1em;
+            margin: 0;
+            
+            a {
+                padding: 0.5em;
+                padding-left: 2em;
+                width: 100%;
+                
+                &:hover,
+                &.active {
+                    background-color: $white;
+                    color: $lightblue;
+                    transition: all 0.4s ease 0.2s;
+                }
+            }
+        }
+    }
+    
+    .icons {
+        bottom: 0.25em;
+        font-size: 0.875em;
+        left: 0;
+        position: absolute;
+        width: 100%;
+    }
+}

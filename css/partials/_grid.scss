@@ -13,7 +13,7 @@ body {
 
 .header {
     background-color: $lightblue;
-    color: $lightgrey;
+    color: $white;
     height: 100%;
     left: 0;
     position: fixed;
@@ -36,8 +36,9 @@ body {
 
 .section {
     background-color: $white;
-    border-top: 0.25em solid $lightgrey;
+    border-top: 0.375em solid $lightgrey;
     display: block;
+    padding-bottom: 1em;
     width: 100%;
 }
 

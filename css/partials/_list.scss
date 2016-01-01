@@ -1,10 +1,8 @@
 /* Unsorted list global config */
 
 ul {
-    border-left: 0.1em solid $darkblue;
     list-style: none;
     margin: 0.5em 0;
-    padding: 0.825em 0 0 0.5em;
     
     li {
         display: inline-block;
@@ -28,30 +26,10 @@ ul {
     }
 }
 
-.icon_list {
-    border: none;
-    padding: 0;
-    text-align: center;
-    
-    & li {
-        display: inline-block;
-        width: 1.75em;
-        
-        & i {
-            margin: 0;
-            
-            &:hover {
-                color: $midblue;
-                transition: all 0.4s ease-in;
-            }
-        }
-    }
+.dual_col {
+    column-count: 2;
 }
 
-.dual_col li {
-    width: 49%;
-}
-
-.multi_col li {
-    width: 33%;
+.multi_col {
+    column-count: 3;
 }

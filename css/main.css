@@ -22,7 +22,7 @@ body {
 
 .header {
   background-color: #0B83E0;
-  color: #F1F1FE;
+  color: #FFF;
   height: 100%;
   left: 0;
   position: fixed;
@@ -42,8 +42,9 @@ body {
 
 .section {
   background-color: #FFF;
-  border-top: 0.25em solid #F1F1FE;
+  border-top: 0.375em solid #F1F1FE;
   display: block;
+  padding-bottom: 1em;
   width: 100%; }
 
 .article {
@@ -94,9 +95,8 @@ h3 {
   text-indent: -0.1em; }
 
 .clear {
-  border-bottom: 0.15em solid #294F6D;
-  clear: both;
-  margin-bottom: 2em; }
+  border: 0.1em solid #F1F1FE;
+  clear: both; }
 
 .mobile {
   display: none; }
@@ -104,10 +104,8 @@ h3 {
 /* import list styles */
 /* Unsorted list global config */
 ul {
-  border-left: 0.1em solid #294F6D;
   list-style: none;
-  margin: 0.5em 0;
-  padding: 0.825em 0 0 0.5em; }
+  margin: 0.5em 0; }
   ul li {
     display: inline-block;
     font-size: 1.2em;
@@ -123,25 +121,15 @@ ul {
       text-align: center;
       width: 1.75em; }
 
-.icon_list {
-  border: none;
-  padding: 0;
-  text-align: center; }
-  .icon_list li {
-    display: inline-block;
-    width: 1.75em; }
-    .icon_list li i {
-      margin: 0; }
-      .icon_list li i:hover {
-        color: #1C649B;
-        -webkit-transition: all 0.4s ease-in;
-        transition: all 0.4s ease-in; }
+.dual_col {
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2; }
 
-.dual_col li {
-  width: 49%; }
-
-.multi_col li {
-  width: 33%; }
+.multi_col {
+  -webkit-column-count: 3;
+     -moz-column-count: 3;
+          column-count: 3; }
 
 /* import leftcol styles */
 /* Header */
@@ -150,15 +138,18 @@ ul {
   margin-top: 2em;
   text-align: center;
   width: 100%; }
-  .header .avatar .photo {
+  .header .avatar a .photo {
     background: url("../../static/img/me.jpg") center center no-repeat;
     background-size: cover;
-    border: 0.125em solid #FFF;
     border-radius: 50%;
     height: 12.5em;
     margin: 0 auto;
     text-indent: -9999em;
     width: 12.5em; }
+    .header .avatar a .photo:hover, .header .avatar a .photo.active {
+      border: 0.125em solid #FFF;
+      -webkit-transition: all 0.4s ease 0.2s;
+      transition: all 0.4s ease 0.2s; }
   .header .avatar .sub_title {
     margin-top: -0.75em;
     text-align: left;
@@ -167,7 +158,7 @@ ul {
     font-style: italic;
     font-weight: 400;
     letter-spacing: -0.0625em;
-    margin-top: -0.125em;
+    margin-top: 0.5em;
     padding: 0.25em 1.25em; }
 
 .header .nav {
@@ -195,6 +186,19 @@ ul {
   left: 0;
   position: absolute;
   width: 100%; }
+  .header .icons .icon_list {
+    border: none;
+    padding: 0;
+    text-align: center; }
+    .header .icons .icon_list li {
+      display: inline-block;
+      width: 1.75em; }
+      .header .icons .icon_list li i {
+        margin: 0; }
+        .header .icons .icon_list li i:hover {
+          color: #1C649B;
+          -webkit-transition: all 0.4s ease-in;
+          transition: all 0.4s ease-in; }
 
 /* import content styles */
 /* Content area */
@@ -205,53 +209,51 @@ ul {
   text-align: left;
   width: 75%; }
 
-/* Home section */
-.home {
-  border: none;
-  height: 41em; }
-  .home::before {
-    background: url(../../static/img/bacground1080p.jpg) bottom center no-repeat;
-    background-size: cover;
-    content: "";
-    display: block;
-    height: 17em; }
-  .home .h2_wrapper {
-    height: 9em;
-    margin-top: 3em; }
-    .home .h2_wrapper .sub_title {
-      margin-bottom: 1em;
-      margin-top: -1em;
-      text-indent: -0.1em; }
-    .home .h2_wrapper q {
-      font-size: 1.75em;
-      font-style: italic; }
-  .home .article .info {
-    margin: 2em 0;
-    width: 18em; }
-    .home .article .info li {
-      font-size: 1.25em; }
-
-/* About Me section */
-.about_me .article .col {
+.col {
+  -webkit-columns: 3;
+     -moz-columns: 3;
+          columns: 3;
   display: inline-block;
   font-size: 1.25em;
   line-height: 1.5em;
-  padding: 1em;
-  padding-right: 0;
+  margin-top: 1em;
   text-align: justify;
-  width: 49.5%;
+  width: 100%;
   vertical-align: top; }
-  .about_me .article .col p {
+  .col p {
     padding-bottom: 1.5em; }
-    .about_me .article .col p span {
+    .col p span {
       border-left: 0.15em solid #294F6D;
       padding: 0 0 0 0.2em; }
 
-.about_me .article .odd {
-  padding-left: 0;
-  padding-right: 1em; }
+/* About Me section */
+.about {
+  border: none; }
+  .about::before {
+    background: url(../../static/img/bacground1080p.jpg) center center no-repeat;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 21em; }
+  .about .h2_wrapper {
+    color: #1C649B;
+    height: 12em;
+    margin-top: 2.5em;
+    margin-bottom: 0.25em; }
+    .about .h2_wrapper .sub_title {
+      margin-bottom: 1em;
+      margin-top: -1em;
+      text-indent: -0.1em; }
+    .about .h2_wrapper q {
+      color: #294F6D;
+      font-size: 1.75em;
+      font-style: italic; }
+      .about .h2_wrapper q strong {
+        color: #0B83E0;
+        font-weight: 400; }
 
-.about_me .article .ujk_logo {
+/* Education section */
+.education .article .ujk_logo {
   background: #fff url(../static/img/logo.png) top left no-repeat;
   border-left: 0.3em solid #294F6D;
   display: inline-block;
@@ -260,7 +262,7 @@ ul {
   text-indent: -9999em;
   width: 6.5em; }
 
-.about_me .article .date {
+.education .article .date {
   border-left: 0.1em solid #294F6D;
   float: right;
   font-size: 1.4em;
@@ -271,6 +273,6 @@ ul {
 /* Footer section */
 .footer {
   font-size: 1.25em;
-  margin: 2em auto 3em;
+  margin: 2em auto;
   width: 75%; }
 /*# sourceMappingURL=main.css.map */

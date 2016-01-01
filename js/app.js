@@ -20,8 +20,10 @@ function scroller() {
             nav.find('li a[href="#' + $(this).attr('id') + '"]').addClass('active');
             if (nav.find('li a[href="#home"]').hasClass('active')) {
                 $('header').find('q').hide(400, 'swing');
+                $('header').find('.photo').addClass('active');
             } else {
                 $('header').find('q').show(400, 'swing');
+                $('header').find('.photo').removeClass('active');
             }
         }
         

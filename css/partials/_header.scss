@@ -12,6 +12,7 @@
             .photo {
                 background: url("../../static/img/me.jpg") center center no-repeat;
                 background-size: cover;
+                border: 0.125em solid $lightblue;
                 border-radius: 50%;
                 height: 12.5em;
                 margin: 0 auto;

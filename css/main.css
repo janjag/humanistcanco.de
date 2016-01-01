@@ -18,7 +18,8 @@ html {
 
 body {
   height: 100%;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
 
 .header {
   background-color: #0B83E0;
@@ -141,6 +142,7 @@ ul {
   .header .avatar a .photo {
     background: url("../../static/img/me.jpg") center center no-repeat;
     background-size: cover;
+    border: 0.125em solid #0B83E0;
     border-radius: 50%;
     height: 12.5em;
     margin: 0 auto;
@@ -210,12 +212,25 @@ ul {
   width: 75%; }
 
 .col {
-  -webkit-columns: 3;
-     -moz-columns: 3;
-          columns: 3;
+  -webkit-column-break-inside: avoid;
+     page-break-inside: avoid;
+          break-inside: avoid;
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+  -webkit-column-fill: balance;
+     -moz-column-fill: balance;
+          column-fill: balance;
+  -webkit-column-gap: 2em;
+     -moz-column-gap: 2em;
+          column-gap: 2em;
+  -webkit-column-rule: 0.1em solid #F1F1FE;
+     -moz-column-rule: 0.1em solid #F1F1FE;
+          column-rule: 0.1em solid #F1F1FE;
   display: inline-block;
   font-size: 1.25em;
   line-height: 1.5em;
+  margin-bottom: 1em;
   margin-top: 1em;
   text-align: justify;
   width: 100%;
@@ -242,7 +257,7 @@ ul {
     margin-bottom: 0.25em; }
     .about .h2_wrapper .sub_title {
       margin-bottom: 1em;
-      margin-top: -1em;
+      margin-top: -0.925em;
       text-indent: -0.1em; }
     .about .h2_wrapper q {
       color: #294F6D;

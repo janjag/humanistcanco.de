@@ -9,10 +9,15 @@
 }
 
 .col {
-    columns: 3;
+    break-inside: avoid;
+    column-count: 2;
+    column-fill: balance;
+    column-gap: 2em;
+    column-rule: 0.1em solid $lightgrey;
     display: inline-block;
     font-size: 1.25em;
     line-height: 1.5em;
+    margin-bottom: 1em;
     margin-top: 1em;
     text-align: justify;
     width: 100%;
@@ -49,7 +54,7 @@
         
         .sub_title {
             margin-bottom: 1em;
-            margin-top: -1em;
+            margin-top: -0.925em;
             text-indent: -0.1em;
         }
         

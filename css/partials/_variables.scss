@@ -12,3 +12,19 @@ $white: #FFF; /* white */
 $font: 'Lato', sans-serif;
 
 /* breakpoints */
+
+@mixin bp($point) {
+    
+    @if $point == phone {
+        @media screen and (max-width: 29.9375em) { @content; } /* up to 479px / smartphones portrait mode */
+    }
+    @else if $point == tablet {
+        @media screen and (min-width: 30em) and (max-width: 50em) { @content; } /* from 480px to 800px / smarphones landscape and tablet portrait */
+    }
+    @else if $point == hd {
+        @media screen and (min-width: 50.0625em ) and (max-width: 82.25em) { @content; } /* from 801px to 1316px/ tablet portrait and small screens */
+    }
+    @else if $point == hdp {
+        @media screen and (max-width: 100em) { @content; } /* 100em = 1600px / medium(hd+) screens */
+    }
+}

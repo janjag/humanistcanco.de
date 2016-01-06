@@ -1,10 +1,19 @@
 /* Header */
 
 .header {
+    background-color: $lightblue;
+    color: $white;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: all 0.4s linear 0.2s;
+    width: 22em;
     
     .avatar {
-        height: 18em;
+        height: 19.5em;
         margin-top: 2em;
+        padding: 0 2.5em;
         text-align: center;
         width: 100%;
         
@@ -29,24 +38,22 @@
         }
         
         .sub_title {
-            margin-top: -0.75em;
+            margin-top: -0.675em;
             text-align: left;
-            text-indent: 2.025em;
+            text-indent: 0.405em;
         }
         
         q {
             font-style: italic;
             font-weight: 400;
             letter-spacing: -0.0625em;
-            margin-top: 0.5em;
-            padding: 0.25em 1.25em;
+            padding: 1em 0.25em;
         }
     }
     
     .nav {
         border: none;
         padding-left: 1em;
-        margin-top: 1em;
         
         li {
             font-size: 1.375em;
@@ -90,6 +97,25 @@
 
                     &:hover {
                         color: $midblue;
+                        transition: all 0.4s ease-in;
+                    }
+                }
+            }
+        }
+    }
+    
+    &.header_slide {
+        transform: translateX(-19.5em);
+        transition: all 0.4s linear 0.2s;
+        
+        .nav {
+            li {
+                a {
+                    padding-right: 0;
+                    
+                    i {
+                        float: right;
+                        margin-right: 0.1em;
                         transition: all 0.4s ease-in;
                     }
                 }

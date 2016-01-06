@@ -10,7 +10,7 @@
 
 .col {
     break-inside: avoid;
-    column-count: 2;
+    column-count: 3;
     column-fill: balance;
     column-gap: 2em;
     column-rule: 0.1em solid $lightgrey;
@@ -22,6 +22,7 @@
     text-align: justify;
     width: 100%;
     vertical-align: top;
+    
 
     p{
         padding-bottom: 1.5em;

@@ -1,0 +1,332 @@
+/* Import variables */
+/* colors */
+/* dark blue  */
+/* mid blue */
+/* light grey */
+/* light blue */
+/* white */
+/* fonts */
+/* breakpoints */
+/* import sass partials*/
+/* Grid */
+html {
+  background-color: #FFF;
+  color: #294F6D;
+  font: 100% "Lato", sans-serif;
+  font-weight: 300;
+  height: 100%; }
+
+body {
+  height: 100%;
+  position: relative;
+  overflow-x: hidden; }
+
+.wrapper {
+  background-color: #F1F1FE;
+  height: 100%;
+  width: 100%;
+  padding-left: 22em;
+  -webkit-transition: all 0.4s linear 0.2s;
+  transition: all 0.4s linear 0.2s; }
+  .wrapper.wide {
+    padding-left: 2.5em;
+    -webkit-transition: all 0.4s linear 0.2s;
+    transition: all 0.4s linear 0.2s; }
+
+.content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  -webkit-transition: all 0.4s linear 0.2s;
+  transition: all 0.4s linear 0.2s; }
+  .content .menu_button {
+    background-color: none;
+    color: #0B83E0;
+    height: 1.5em;
+    left: 22em;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    -webkit-transition: all 0.4s linear 0.2s;
+    transition: all 0.4s linear 0.2s;
+    width: 1.5em; }
+    .content .menu_button i {
+      cursor: pointer;
+      font-size: 1.25em; }
+    .content .menu_button.wide {
+      left: 2.5em;
+      -webkit-transition: all 0.4s linear 0.2s;
+      transition: all 0.4s linear 0.2s; }
+
+.section {
+  background-color: #FFF;
+  border-top: 0.375em solid #F1F1FE;
+  display: block;
+  padding-bottom: 1em;
+  width: 100%; }
+
+.article {
+  margin: 1.5em auto;
+  text-align: left;
+  width: 75%; }
+
+/* import global styles */
+/* Reset */
+a, article, body, div, footer, h1, h2, h3, header, html, i, img, li, p, q, section, span, strong, ul {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/* Global */
+a {
+  display: inline-block;
+  text-decoration: none; }
+  a:link, a:hover, a:visited {
+    color: inherit; }
+
+strong {
+  font-family: "Lato", sans-serif;
+  font-weight: 700; }
+
+h1 {
+  font-size: 2.25em;
+  font-weight: 700;
+  letter-spacing: -0.05em; }
+
+h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 3.5em;
+  font-weight: 400;
+  letter-spacing: -0.04em; }
+
+h3 {
+  border-left: 0.1em solid #294F6D;
+  font-family: "Lato", sans-serif;
+  font-size: 2.5em;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  margin: 0.5em 0;
+  padding-left: 0.2em; }
+
+.h_first {
+  text-indent: -0.1em; }
+
+.clear {
+  border: 0.1em solid #F1F1FE;
+  clear: both; }
+
+.hidden {
+  display: none;
+  -webkit-transition: all 0.4s ease 0.2s;
+  transition: all 0.4s ease 0.2s; }
+
+/* import list styles */
+/* Unsorted list global config */
+ul {
+  list-style: none;
+  margin: 0.5em 0; }
+  ul li {
+    display: inline-block;
+    font-size: 1.2em;
+    margin-bottom: 0.75em;
+    width: 100%; }
+    ul li strong, ul li a, ul li i {
+      display: block;
+      padding-bottom: 0.2em; }
+    ul li i {
+      float: left;
+      margin-right: 0.3em;
+      padding-top: 0.1em;
+      text-align: center;
+      width: 1.75em; }
+
+.dual_col {
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2; }
+
+.multi_col {
+  -webkit-column-count: 4;
+     -moz-column-count: 4;
+          column-count: 4; }
+
+/* import leftcol styles */
+/* Header */
+.header {
+  background-color: #0B83E0;
+  color: #FFF;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  -webkit-transition: all 0.4s linear 0.2s;
+  transition: all 0.4s linear 0.2s;
+  width: 22em; }
+  .header .avatar {
+    height: 19.5em;
+    margin-top: 2em;
+    padding: 0 2.5em;
+    text-align: center;
+    width: 100%; }
+    .header .avatar a .photo {
+      background: url("../../static/img/me.jpg") center center no-repeat;
+      background-size: cover;
+      border: 0.125em solid #0B83E0;
+      border-radius: 50%;
+      height: 12.5em;
+      margin: 0 auto;
+      text-indent: -9999em;
+      width: 12.5em; }
+      .header .avatar a .photo:hover, .header .avatar a .photo.active {
+        border: 0.125em solid #FFF;
+        -webkit-transition: all 0.4s ease 0.2s;
+        transition: all 0.4s ease 0.2s; }
+    .header .avatar .sub_title {
+      margin-top: -0.675em;
+      text-align: left;
+      text-indent: 0.405em; }
+    .header .avatar q {
+      font-style: italic;
+      font-weight: 400;
+      letter-spacing: -0.0625em;
+      padding: 1em 0.25em; }
+  .header .nav {
+    border: none;
+    padding-left: 1em; }
+    .header .nav li {
+      font-size: 1.375em;
+      font-weight: 400;
+      letter-spacing: -0.1em;
+      margin: 0; }
+      .header .nav li a {
+        padding: 0.5em;
+        padding-left: 2em;
+        width: 100%; }
+        .header .nav li a:hover, .header .nav li a.active {
+          background-color: #FFF;
+          color: #0B83E0;
+          -webkit-transition: all 0.4s ease 0.2s;
+          transition: all 0.4s ease 0.2s; }
+  .header .icons {
+    bottom: 0.25em;
+    font-size: 0.875em;
+    left: 0;
+    position: absolute;
+    width: 100%; }
+    .header .icons .icon_list {
+      border: none;
+      padding: 0;
+      text-align: center; }
+      .header .icons .icon_list li {
+        display: inline-block;
+        width: 1.75em; }
+        .header .icons .icon_list li i {
+          margin: 0; }
+          .header .icons .icon_list li i:hover {
+            color: #1C649B;
+            -webkit-transition: all 0.4s ease-in;
+            transition: all 0.4s ease-in; }
+  .header.header_slide {
+    -webkit-transform: translateX(-19.5em);
+        -ms-transform: translateX(-19.5em);
+            transform: translateX(-19.5em);
+    -webkit-transition: all 0.4s linear 0.2s;
+    transition: all 0.4s linear 0.2s; }
+    .header.header_slide .nav li a {
+      padding-right: 0; }
+      .header.header_slide .nav li a i {
+        float: right;
+        margin-right: 0.1em;
+        -webkit-transition: all 0.4s ease-in;
+        transition: all 0.4s ease-in; }
+
+/* import content styles */
+/* Content area */
+.h2_wrapper {
+  height: 6em;
+  margin: 5em auto 0.5em;
+  position: relative;
+  text-align: left;
+  width: 75%; }
+
+.col {
+  -webkit-column-break-inside: avoid;
+     page-break-inside: avoid;
+          break-inside: avoid;
+  -webkit-column-count: 3;
+     -moz-column-count: 3;
+          column-count: 3;
+  -webkit-column-fill: balance;
+     -moz-column-fill: balance;
+          column-fill: balance;
+  -webkit-column-gap: 2em;
+     -moz-column-gap: 2em;
+          column-gap: 2em;
+  -webkit-column-rule: 0.1em solid #F1F1FE;
+     -moz-column-rule: 0.1em solid #F1F1FE;
+          column-rule: 0.1em solid #F1F1FE;
+  display: inline-block;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  text-align: justify;
+  width: 100%;
+  vertical-align: top; }
+  .col p {
+    padding-bottom: 1.5em; }
+    .col p span {
+      border-left: 0.15em solid #294F6D;
+      padding: 0 0 0 0.2em; }
+
+/* About Me section */
+.about {
+  border: none; }
+  .about::before {
+    background: url(../../static/img/bacground1080p.jpg) center center no-repeat;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 21em; }
+  .about .h2_wrapper {
+    color: #0B83E0;
+    height: 12em;
+    margin-top: 2.5em;
+    margin-bottom: 0.25em; }
+    .about .h2_wrapper .sub_title {
+      margin-bottom: 1em;
+      margin-top: -0.925em;
+      text-indent: -0.1em; }
+    .about .h2_wrapper q {
+      color: #294F6D;
+      font-size: 1.75em;
+      font-style: italic; }
+      .about .h2_wrapper q strong {
+        color: #0B83E0;
+        font-weight: 400; }
+
+/* Education section */
+.education .article .ujk_logo {
+  background: #fff url(../static/img/logo.png) top left no-repeat;
+  border-left: 0.3em solid #294F6D;
+  display: inline-block;
+  height: 4.1625em;
+  margin: 1em 0;
+  text-indent: -9999em;
+  width: 6.5em; }
+
+.education .article .date {
+  border-left: 0.1em solid #294F6D;
+  float: right;
+  font-size: 1.4em;
+  margin-top: 2em;
+  padding: 0 0.3em;
+  text-align: right; }
+
+/* Footer section */
+.footer {
+  font-size: 1.25em;
+  margin: 2em auto;
+  width: 75%; }
+/*# sourceMappingURL=main.css.map */

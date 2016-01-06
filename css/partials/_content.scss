@@ -1,0 +1,108 @@
+/* Content area */
+
+.h2_wrapper {
+    height: 6em;
+    margin: 5em auto 0.5em;
+    position: relative;
+    text-align: left;
+    width: 75%;
+}
+
+.col {
+    break-inside: avoid;
+    column-count: 3;
+    column-fill: balance;
+    column-gap: 2em;
+    column-rule: 0.1em solid $lightgrey;
+    display: inline-block;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    text-align: justify;
+    width: 100%;
+    vertical-align: top;
+    
+
+    p{
+        padding-bottom: 1.5em;
+
+        span {
+            border-left: 0.15em solid $darkblue;
+            padding: 0 0 0 0.2em;
+        }
+    }
+}
+
+/* About Me section */
+
+.about {
+    border: none;
+    
+    &::before {
+        background: url(../../static/img/bacground1080p.jpg) center center no-repeat;
+        background-size: cover;
+        content: "";
+        display: block;
+        height: 21em;
+    }
+    
+    .h2_wrapper {
+        color: $lightblue;
+        height: 12em;
+        margin-top: 2.5em;
+        margin-bottom: 0.25em;
+        
+        .sub_title {
+            margin-bottom: 1em;
+            margin-top: -0.925em;
+            text-indent: -0.1em;
+        }
+        
+        q {
+            color: $darkblue;
+            font-size: 1.75em;
+            font-style: italic;
+            
+            strong {
+                color: $lightblue;
+                font-weight: 400;
+            }
+        }
+    }
+    
+}
+
+/* Education section */
+
+.education {
+    .article{
+        
+        .ujk_logo {
+            background: #fff url(../static/img/logo.png) top left no-repeat;
+            border-left: 0.3em solid $darkblue;
+            display: inline-block;
+            height: 4.1625em;
+            margin: 1em 0;
+            text-indent: -9999em;
+            width: 6.5em;
+        }
+        
+        .date {
+            border-left: 0.1em solid $darkblue;
+            float: right;
+            font-size: 1.4em;
+            margin-top: 2em;
+            padding: 0 0.3em;
+            text-align: right;
+        }
+    }
+}
+
+/* Footer section */
+
+.footer {
+    font-size: 1.25em;
+    margin: 2em auto;
+    width: 75%;
+}

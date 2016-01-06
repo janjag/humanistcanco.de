@@ -1,0 +1,19 @@
+/* Import variables */
+@import "_variables";
+
+/* import sass partials*/
+
+/* Grid */
+@import "_grid";
+    
+/* import global styles */
+@import "_global";
+
+/* import list styles */
+@import "_list";
+
+/* import leftcol styles */
+@import "_header";
+
+/* import content styles */
+@import "_content";

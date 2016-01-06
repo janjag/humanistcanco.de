@@ -1,0 +1,35 @@
+/* Unsorted list global config */
+
+ul {
+    list-style: none;
+    margin: 0.5em 0;
+    
+    li {
+        display: inline-block;
+        font-size: 1.2em;
+        margin-bottom: 0.75em;
+        width: 100%;
+        
+        strong, a, i {
+            display: block;
+            padding-bottom: 0.2em;
+        }
+        
+        i {
+            float: left;
+            margin-right: 0.3em;
+            padding-top: 0.1em;
+            text-align: center;
+            width: 1.75em;
+        }
+        
+    }
+}
+
+.dual_col {
+    column-count: 2;
+}
+
+.multi_col {
+    column-count: 4;
+}

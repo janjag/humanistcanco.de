@@ -15,7 +15,9 @@ function scroller() {
             nav.find('li a').removeClass('active');
             
             var hash = '#' + $(this).attr('id');
-            history.pushState(null, null, hash);
+            if (window.location.hash !== hash) {
+                history.pushState(null, null, hash);
+            }
             
             nav.find('li a[href="#' + $(this).attr('id') + '"]').addClass('active');
             if (nav.find('li a[href="#home"]').hasClass('active')) {

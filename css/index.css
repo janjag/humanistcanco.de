@@ -346,6 +346,10 @@ article {
     text-indent: -9999em;
     width: 6.5em;
 }
+.work_logo {
+    background-color: transparent;
+    width: auto;
+}
 
 .date {
     border-left: 0.1em solid #294F6D;
